@@ -1,0 +1,36 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARCH	Makefile	/^ARCH = arm$/;"	m
+CC	Makefile	/^CC = \/usr\/local\/arm\/4.3.3-rockontrol\/bin\/arm-linux-gcc$/;"	m
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Wall -DDEBUG -I..\/include -I..\/depend\/include -I..\/common -c$/;"	m
+MB_ADU_MAX_LEN	rkmodbus.h	7;"	d
+MB_ERROR	rkmodbus.h	/^	MB_ERROR,$/;"	e	enum:__anon1
+MB_FINISH	rkmodbus.h	/^	MB_FINISH,$/;"	e	enum:__anon1
+MB_PROCESS	rkmodbus.h	/^	MB_PROCESS,$/;"	e	enum:__anon1
+MB_RECEIVE	rkmodbus.h	/^	MB_RECEIVE,$/;"	e	enum:__anon1
+MB_REQUEST	rkmodbus.h	/^	MB_REQUEST = 0,$/;"	e	enum:__anon1
+MB_STEP_T	rkmodbus.h	/^} MB_STEP_T;$/;"	t	typeref:enum:__anon1
+MB_TIME_OUT_MS	rkmodbus.h	6;"	d
+OBJS	Makefile	/^OBJS = rkmodbus.o rkcrc.o rkser.o$/;"	m
+TARGET	Makefile	/^TARGET = libmodbus.so$/;"	m
+_RK_MODBUS_H_	rkmodbus.h	2;"	d
+addr	rkmodbus.h	/^	uint8_t addr;$/;"	m	struct:mbRtuReqMsg
+crc	rkmodbus.h	/^	uint16_t crc;$/;"	m	struct:mbRtuReqMsg
+func	rkmodbus.h	/^	uint8_t func;$/;"	m	struct:mbRtuReqMsg
+init	rkmodbus.c	/^int init(void *handle)$/;"	f
+mbRtuReqMsg	rkmodbus.h	/^typedef struct mbRtuReqMsg {$/;"	s
+mbRtuReqMsg_t	rkmodbus.h	/^} mbRtuReqMsg_t;$/;"	t	typeref:struct:mbRtuReqMsg
+name	rkmodbus.c	/^char *name(void)$/;"	f
+num	rkmodbus.h	/^	uint16_t num;$/;"	m	struct:mbRtuReqMsg
+printHex	rkmodbus.c	/^int printHex(void *buf, int len)$/;"	f
+reg	rkmodbus.h	/^	uint16_t reg;$/;"	m	struct:mbRtuReqMsg
+rkGenModbusMsg03	rkmodbus.c	/^int rkGenModbusMsg03(char *buf, unsigned int bufsize, uint8_t slvaddr, uint16_t regaddr)$/;"	f
+rkMbProcResp	rkmodbus.c	/^static int rkMbProcResp(char *buf, uint8_t slvaddr, float *val)$/;"	f	file:
+rkRecvModbusResp	rkmodbus.c	/^static int rkRecvModbusResp(char *buf, uint8_t slvaddr, uint16_t regaddr, int fd)$/;"	f	file:
+rkSendModbusReq	rkmodbus.c	/^static int rkSendModbusReq(int fd, const char *sendbuf, int bufsize)$/;"	f	file:
+run	rkmodbus.c	/^int run(void *handle)$/;"	f

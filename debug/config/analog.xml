@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<analog>
+	<group id="CH0">
+		<parameter name="INUSE">EN</parameter>
+		<parameter name="TYPE">20MA</parameter>
+		<parameter name="CODE">AI0</parameter>
+		<parameter name="ULV"></parameter>
+		<parameter name="LLV"></parameter>
+		<parameter name="UTV"></parameter>
+		<parameter name="LTV"></parameter>
+		<parameter name="CONV">DIS</parameter>
+		<parameter name="USEFML">DIS</parameter>
+		<parameter name="FMLEXPR"></parameter>
+	</group>
+</analog>

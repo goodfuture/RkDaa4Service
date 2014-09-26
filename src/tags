@@ -1,0 +1,669 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AI_T	rktype.h	/^} AI_T;$/;"	t	typeref:enum:__anon13
+AOM_TBL_NAME	rkdsm.h	27;"	d
+ARG_CFG_DIR_OFFSET	rktype.h	245;"	d
+ARG_DYN_LIB_OFFSET	rktype.h	246;"	d
+ARG_MSG_DB_PATH_OFFSET	rktype.h	248;"	d
+ARG_RTD_DB_PATH_OFFSET	rktype.h	247;"	d
+AllParam	rkprotocol.h	/^    AllParam,$/;"	e	enum:ParamType
+AnalogParam	rkprotocol.h	/^    AnalogParam,$/;"	e	enum:ParamType
+BOTH	rktype.h	/^	BOTH,$/;"	e	enum:__anon7
+CLEAR_DTU_LINK_FLAG	rktype.h	78;"	d
+CLEAR_ETH_LINK_FLAG	rktype.h	76;"	d
+CM_T	rktype.h	/^} CM_T;$/;"	t	typeref:enum:__anon9
+CORE_VERSION	rktype.h	10;"	d
+CW_ECHO_OF_EXPORT_HISTORY_DATA	rkprotocol.h	59;"	d
+CW_ECHO_OF_GET_FIRMWARE_VERSION	rkprotocol.h	61;"	d
+CW_ECHO_OF_GET_PARAM_CONFIG	rkprotocol.h	55;"	d
+CW_ECHO_OF_GET_SUPPORTED_PROTOCOL	rkprotocol.h	62;"	d
+CW_ECHO_OF_PUT_PARAM_CONFIG	rkprotocol.h	56;"	d
+CW_ECHO_OF_QUERY_HISTORY_DATA	rkprotocol.h	58;"	d
+CW_ECHO_OF_REBOOT_DEVICE	rkprotocol.h	65;"	d
+CW_ECHO_OF_RESTORE_FACTORY_SETTING	rkprotocol.h	60;"	d
+CW_ECHO_OF_SYN_REALTIME_DATA	rkprotocol.h	57;"	d
+CW_ECHO_OF_UPGRADE_BLP_FIRMWARE	rkprotocol.h	64;"	d
+CW_ECHO_OF_UPGRADE_HMI_FIRMWARE	rkprotocol.h	63;"	d
+CW_ECHO_OF_USER_LOGIN	rkprotocol.h	54;"	d
+CW_EXPORT_HISTORY_DATA	rkprotocol.h	45;"	d
+CW_GET_FIRMWARE_VERSION	rkprotocol.h	47;"	d
+CW_GET_PARAM_CONFIG	rkprotocol.h	41;"	d
+CW_GET_SUPPORTED_PROTOCOL	rkprotocol.h	48;"	d
+CW_PUT_PARAM_CONFIG	rkprotocol.h	42;"	d
+CW_QUERY_HISTORY_DATA	rkprotocol.h	44;"	d
+CW_REBOOT_DEVICE	rkprotocol.h	52;"	d
+CW_RESTORE_FACTORY_SETTING	rkprotocol.h	46;"	d
+CW_SYN_REALTIME_DATA	rkprotocol.h	43;"	d
+CW_UPGRADE_BLP_FIRMWARE	rkprotocol.h	51;"	d
+CW_UPGRADE_DTU_TOOL_FIRMWARE	rkprotocol.h	49;"	d
+CW_UPGRADE_HMI_FIRMWARE	rkprotocol.h	50;"	d
+CW_USER_LOGIN	rkprotocol.h	40;"	d
+ComParam	rkprotocol.h	/^    ComParam,$/;"	e	enum:ParamType
+DAY_DATA_STAT_OFFSET	rktype.h	119;"	d
+DAY_STAT_DATA	rktype.h	/^	DAY_STAT_DATA, \/* Day *\/$/;"	e	enum:__anon11
+DBTABLE_T	rkdsm.h	/^} DBTABLE_T;$/;"	t	typeref:enum:__anon1
+DIM_TBL_NAME	rkdsm.h	26;"	d
+DOM_TBL_NAME	rkdsm.h	25;"	d
+DTM_RECV_TIMEOUT_MS	rkdtm.h	8;"	d
+DTM_SEND_TIMEOUT_MS	rkdtm.h	7;"	d
+DTU	rktype.h	/^	DTU = 0,$/;"	e	enum:__anon7
+DTU_DEV_ID	rktype.h	23;"	d
+DTU_LINK_STATUS_BITMASK	rktype.h	73;"	d
+DT_T	rktype.h	/^} DT_T;$/;"	t	typeref:enum:__anon10
+DUM_T	rktype.h	/^} DUM_T;$/;"	t	typeref:enum:__anon7
+DioParam	rkprotocol.h	/^    DioParam,$/;"	e	enum:ParamType
+DtuParam	rkprotocol.h	/^    DtuParam$/;"	e	enum:ParamType
+EI_SAMPLE_INTERVAL_MS	rktype.h	21;"	d
+ETH	rktype.h	/^	ETH,$/;"	e	enum:__anon7
+ETH_LINK_STATUS_BITMASK	rktype.h	72;"	d
+EVEN	rktype.h	/^	EVEN,$/;"	e	enum:__anon12
+FALSE	rkfml.h	11;"	d
+FIRMWARE_UPDATE_BLP_FILE_PATH	rkprotocol.h	82;"	d
+FIRMWARE_UPDATE_BLP_TMP_FILE	rkprotocol.h	81;"	d
+FIRMWARE_UPDATE_DTU_TOOL_FILE_PATH	rkprotocol.h	84;"	d
+FIRMWARE_UPDATE_DTU_TOOL_TMP_FILE	rkprotocol.h	83;"	d
+FIRMWARE_UPDATE_HMI_FILE_PATH	rkprotocol.h	80;"	d
+FIRMWARE_UPDATE_HMI_TMP_FILE	rkprotocol.h	79;"	d
+FIRMWARE_UPDATE_TMP_DIR	rkprotocol.h	78;"	d
+FLT	rktype.h	/^	FLT,$/;"	e	enum:__anon10
+FML_STACK_SIZE	rkfml.h	14;"	d
+FML_SYMBOL_TABLE_MAX_NUM	rkfml.h	31;"	d
+FML_VAR_PREFIX	rkfml.h	16;"	d
+FTP_PKT_FLAG_ACK	rkprotocol.h	74;"	d
+FTP_PKT_FLAG_ERROR	rkprotocol.h	76;"	d
+FTP_PKT_FLAG_LAST	rkprotocol.h	73;"	d
+FTP_PKT_FLAG_RESEND	rkprotocol.h	75;"	d
+HJTERRMN	rkhjt.h	/^	HJTERRMN,$/;"	e	enum:__anon6
+HJTERRMSG	rkhjt.h	/^	HJTERRMSG,$/;"	e	enum:__anon6
+HJTERRPW	rkhjt.h	/^	HJTERRPW,$/;"	e	enum:__anon6
+HJTEXECFAILED	rkhjt.h	/^	HJTEXECFAILED,$/;"	e	enum:__anon5
+HJTEXECNODATA	rkhjt.h	/^	HJTEXECNODATA,$/;"	e	enum:__anon5
+HJTEXECSUCCESS	rkhjt.h	/^	HJTEXECSUCCESS = 1,$/;"	e	enum:__anon5
+HJTNORMAL	rkhjt.h	/^	HJTNORMAL = 0,$/;"	e	enum:__anon6
+HJTREQERRORPW	rkhjt.h	/^	HJTREQERRORPW,$/;"	e	enum:__anon4
+HJTREQREADYEXEC	rkhjt.h	/^	HJTREQREADYEXEC = 1,$/;"	e	enum:__anon4
+HJTREQREJECT	rkhjt.h	/^	HJTREQREJECT,$/;"	e	enum:__anon4
+HJT_CMD_RECV_INTERVAL_MS	rkdtm.h	10;"	d
+HJT_CMD_RECV_TIMEOUT_MS	rkdtm.h	11;"	d
+HJT_DATA_ANSWER_BIT	rkhjt.h	11;"	d
+HJT_DATA_NUM_BIT	rkhjt.h	12;"	d
+HJT_ERR_T	rkhjt.h	/^} HJT_ERR_T;$/;"	t	typeref:enum:__anon6
+HJT_MSG_HDR_LEN	rkhjt.h	8;"	d
+HJT_MSG_MAX_LEN	rkhjt.h	7;"	d
+HJT_MSG_SAFE_LEN	rkhjt.h	9;"	d
+HJT_RST_T	rkhjt.h	/^} HJT_RST_T;$/;"	t	typeref:enum:__anon5
+HJT_RTN_T	rkhjt.h	/^} HJT_RTN_T;$/;"	t	typeref:enum:__anon4
+HOM_TBL_NAME	rkdsm.h	24;"	d
+HOU_DATA_STAT_OFFSET	rktype.h	118;"	d
+HOU_STAT_DATA	rktype.h	/^	HOU_STAT_DATA, \/* Hour *\/$/;"	e	enum:__anon11
+INT	rktype.h	/^	INT = 0,$/;"	e	enum:__anon10
+IO_SAMPLE_INTERVAL_MS	rktype.h	20;"	d
+IS_DTU_LINKED	rktype.h	82;"	d
+IS_DTU_LINK_ABNORMAL	rktype.h	83;"	d
+IS_ETH_LINKED	rktype.h	80;"	d
+IS_ETH_LINK_ABNORMAL	rktype.h	81;"	d
+IS_MSG_UPLOAD_BY_DTU	rktype.h	42;"	d
+IS_MSG_UPLOAD_BY_ETH	rktype.h	43;"	d
+IS_MSG_UPLOAD_BY_ETH_AND_DTU	rktype.h	44;"	d
+MA20	rktype.h	/^	MA20 = 0,$/;"	e	enum:__anon13
+MAX_AOM_REC_NUM	rkdsm.h	38;"	d
+MAX_CMDLINE_ARG_NUM	rktype.h	257;"	d
+MAX_CODE_TBL_NUM	rktype.h	250;"	d
+MAX_DIM_REC_NUM	rkdsm.h	37;"	d
+MAX_DOM_REC_NUM	rkdsm.h	36;"	d
+MAX_HOM_REC_NUM	rkdsm.h	35;"	d
+MAX_LIB_NUM	rkscan.h	6;"	d
+MAX_MOM_REC_NUM	rkdsm.h	34;"	d
+MAX_RI_REC_NUM	rkdsm.h	31;"	d
+MAX_RTD_REC_NUM	rkdsm.h	32;"	d
+MAX_RTM_REC_NUM	rkdsm.h	33;"	d
+MNT_DATA_STAT_OFFSET	rktype.h	117;"	d
+MNT_STAT_DATA	rktype.h	/^	MNT_STAT_DATA = 0, \/* Minute *\/$/;"	e	enum:__anon11
+MOM_TBL_NAME	rkdsm.h	23;"	d
+MON_DATA_STAT_OFFSET	rktype.h	120;"	d
+MON_STAT_DATA	rktype.h	/^	MON_STAT_DATA, \/* Month *\/$/;"	e	enum:__anon11
+MSGTYPEAOM	rktype.h	/^	MSGTYPEAOM,		\/* Alarm Of Message *\/$/;"	e	enum:__anon8
+MSGTYPEDIM	rktype.h	/^	MSGTYPEDIM,		\/* Digital Input Message *\/$/;"	e	enum:__anon8
+MSGTYPEDOM	rktype.h	/^	MSGTYPEDOM,		\/* Day Of Message *\/$/;"	e	enum:__anon8
+MSGTYPEHOM	rktype.h	/^	MSGTYPEHOM,		\/* Hour Of Message *\/$/;"	e	enum:__anon8
+MSGTYPEMOM	rktype.h	/^	MSGTYPEMOM,		\/* Minute Of Message *\/$/;"	e	enum:__anon8
+MSGTYPERTM	rktype.h	/^	MSGTYPERTM = 0, \/* Real-Time Message *\/$/;"	e	enum:__anon8
+MSG_TYPE_T	rktype.h	/^} MSG_TYPE_T;$/;"	t	typeref:enum:__anon8
+NONE	rktype.h	/^	NONE = 0,$/;"	e	enum:__anon12
+NetParam	rkprotocol.h	/^    NetParam,$/;"	e	enum:ParamType
+ODD	rktype.h	/^	ODD,$/;"	e	enum:__anon12
+OFF	rktype.h	17;"	d
+ON	rktype.h	13;"	d
+OPTR_TABLE_SIZE	rkfml.c	20;"	d	file:
+PARITY_T	rktype.h	/^} PARITY_T;$/;"	t	typeref:enum:__anon12
+ParamType	rkprotocol.h	/^enum ParamType {$/;"	g
+RI_TBL_NAME	rkdsm.h	21;"	d
+RKDOMTABLE	rkdsm.h	/^	RKDOMTABLE,$/;"	e	enum:__anon1
+RKHOMTABLE	rkdsm.h	/^	RKHOMTABLE,$/;"	e	enum:__anon1
+RKMOMTABLE	rkdsm.h	/^	RKMOMTABLE,$/;"	e	enum:__anon1
+RKPROTOCOL_H	rkprotocol.h	2;"	d
+RKRTDTABLE	rkdsm.h	/^	RKRTDTABLE = 0,$/;"	e	enum:__anon1
+RKRTMTABLE	rkdsm.h	/^	RKRTMTABLE,$/;"	e	enum:__anon1
+RKSERVER	rkserver.h	2;"	d
+RK_FTP_HEADER_FLAG_SEG_LEN	rkprotocol.h	34;"	d
+RK_FTP_HEADER_FLAG_SEG_OFFSET	rkprotocol.h	33;"	d
+RK_FTP_HEADER_LEN	rkprotocol.h	37;"	d
+RK_FTP_HEADER_LEN_SEG_LEN	rkprotocol.h	36;"	d
+RK_FTP_HEADER_LEN_SEG_OFFSET	rkprotocol.h	35;"	d
+RK_FTP_HEADER_SEQ_SEG_LEN	rkprotocol.h	32;"	d
+RK_FTP_MESSAGE_MAX_LEN	rkprotocol.h	38;"	d
+RK_PROTOCOL_CW_SEG_LEN	rkprotocol.h	25;"	d
+RK_PROTOCOL_CW_SEG_OFFSET	rkprotocol.h	24;"	d
+RK_PROTOCOL_HEADER	rkprotocol.h	23;"	d
+RK_PROTOCOL_HEADER_LEN	rkprotocol.h	28;"	d
+RK_PROTOCOL_MESSAGE_MAX_LEN	rkprotocol.h	30;"	d
+RK_PROTOCOL_PKT_LEN_SEG_LEN	rkprotocol.h	27;"	d
+RK_PROTOCOL_PKT_LEN_SEG_OFFSET	rkprotocol.h	26;"	d
+RK_PROTOCOL_TAIL_LEN	rkprotocol.h	29;"	d
+RTD_CONV_VAL_OFFSET	rktype.h	115;"	d
+RTD_RAW_VAL_OFFSET	rktype.h	114;"	d
+RTD_TBL_NAME	rkdsm.h	20;"	d
+RTM_TBL_NAME	rkdsm.h	22;"	d
+RUNTIME_INFO_UPDATE_INTERVAL_S	rkdsm.h	29;"	d
+SET_DTU_LINK_FLAG	rktype.h	77;"	d
+SET_ETH_LINK_FLAG	rktype.h	75;"	d
+STACKOPND	rkfml.h	/^	STACKOPND,	\/* operand stack *\/$/;"	e	enum:__anon3
+STACKOPTR	rkfml.h	/^	STACKOPTR = 0, \/* operator stack *\/$/;"	e	enum:__anon3
+STACK_TYPE_T	rkfml.h	/^} STACK_TYPE_T;$/;"	t	typeref:enum:__anon3
+STAT_DATA_TYPE	rktype.h	/^} STAT_DATA_TYPE;$/;"	t	typeref:enum:__anon11
+SerialParam	rkprotocol.h	/^    SerialParam,$/;"	e	enum:ParamType
+SystemParam	rkprotocol.h	/^    SystemParam,$/;"	e	enum:ParamType
+TCPCLIENT	rktype.h	/^	TCPCLIENT,$/;"	e	enum:__anon9
+TCPSERVER	rktype.h	/^	TCPSERVER,$/;"	e	enum:__anon9
+TLV_LEN_SEG_LEN	rkprotocol.h	70;"	d
+TLV_LEN_SEG_OFFSET	rkprotocol.h	69;"	d
+TLV_TAG_ALARM_ENABLE	rkprotocol.h	103;"	d
+TLV_TAG_ALL_ANALOG_PARAM	rkprotocol.h	125;"	d
+TLV_TAG_ALL_COM_PARAM	rkprotocol.h	106;"	d
+TLV_TAG_ALL_DIO_PARAM	rkprotocol.h	135;"	d
+TLV_TAG_ALL_DTU_PARAM	rkprotocol.h	142;"	d
+TLV_TAG_ALL_FIRMWARE_VERSION	rkprotocol.h	145;"	d
+TLV_TAG_ALL_NET_PARAM	rkprotocol.h	117;"	d
+TLV_TAG_ALL_SERIAL_PARAM	rkprotocol.h	130;"	d
+TLV_TAG_ALL_SYS_PARAM	rkprotocol.h	91;"	d
+TLV_TAG_ANALOG_CH16_PARAM	rkprotocol.h	127;"	d
+TLV_TAG_ANALOG_CH1_PARAM	rkprotocol.h	126;"	d
+TLV_TAG_BLP_VERSION	rkprotocol.h	147;"	d
+TLV_TAG_COM1_PARAM	rkprotocol.h	107;"	d
+TLV_TAG_COM1_PROTOCOL	rkprotocol.h	108;"	d
+TLV_TAG_COM2_PARAM	rkprotocol.h	109;"	d
+TLV_TAG_COM2_PROTOCOL	rkprotocol.h	110;"	d
+TLV_TAG_COM3_PARAM	rkprotocol.h	111;"	d
+TLV_TAG_COM3_PROTOCOL	rkprotocol.h	112;"	d
+TLV_TAG_COM4_PARAM	rkprotocol.h	113;"	d
+TLV_TAG_COM4_PROTOCOL	rkprotocol.h	114;"	d
+TLV_TAG_DEVICE_IP_ADDR	rkprotocol.h	119;"	d
+TLV_TAG_DEVICE_NETMASK	rkprotocol.h	120;"	d
+TLV_TAG_DI_CH1_PARAM	rkprotocol.h	136;"	d
+TLV_TAG_DI_CH8_PARAM	rkprotocol.h	137;"	d
+TLV_TAG_DO_CH1_PARAM	rkprotocol.h	138;"	d
+TLV_TAG_DO_CH8_PARAM	rkprotocol.h	139;"	d
+TLV_TAG_DSD_UPLOAD	rkprotocol.h	101;"	d
+TLV_TAG_DTU_TOOL_VERSION	rkprotocol.h	148;"	d
+TLV_TAG_HMI_VERSION	rkprotocol.h	146;"	d
+TLV_TAG_HSD_UPLOAD	rkprotocol.h	100;"	d
+TLV_TAG_LINK_MODE	rkprotocol.h	118;"	d
+TLV_TAG_LOGIN_PASSWORD	rkprotocol.h	88;"	d
+TLV_TAG_LOGIN_USER	rkprotocol.h	87;"	d
+TLV_TAG_MN_ID	rkprotocol.h	93;"	d
+TLV_TAG_REMOTE_IP_ADDR	rkprotocol.h	121;"	d
+TLV_TAG_REMOTE_PORT	rkprotocol.h	122;"	d
+TLV_TAG_RTD_UPLOAD	rkprotocol.h	98;"	d
+TLV_TAG_SEG_LEN	rkprotocol.h	68;"	d
+TLV_TAG_SEG_OFFSET	rkprotocol.h	67;"	d
+TLV_TAG_SERIAL_CH1_PARAM	rkprotocol.h	131;"	d
+TLV_TAG_SERIAL_CH32_PARAM	rkprotocol.h	132;"	d
+TLV_TAG_SIM_ID	rkprotocol.h	92;"	d
+TLV_TAG_STORAGE_INTERVAL	rkprotocol.h	95;"	d
+TLV_TAG_SWITCH_SENSE	rkprotocol.h	102;"	d
+TLV_TAG_SYSTEM_TYPE	rkprotocol.h	94;"	d
+TLV_TAG_TMD_UPLOAD	rkprotocol.h	99;"	d
+TLV_TAG_UPLOAD_INTERVAL	rkprotocol.h	97;"	d
+TLV_TAG_UPLOAD_TYPE	rkprotocol.h	96;"	d
+TLV_VALUE_SEG_OFFSET	rkprotocol.h	71;"	d
+TRUE	rkfml.h	7;"	d
+UDPCLIENT	rktype.h	/^	UDPCLIENT = 0,$/;"	e	enum:__anon9
+UDPSERVER	rktype.h	/^	UDPSERVER,$/;"	e	enum:__anon9
+V10	rktype.h	/^	V10,$/;"	e	enum:__anon13
+V5	rktype.h	/^	V5,$/;"	e	enum:__anon13
+XML_SYSTEM_PARAM_NAME_ALARM_UPLOAD	rkxml.h	19;"	d
+XML_SYSTEM_PARAM_NAME_DAY_DATA_UPLOAD	rkxml.h	17;"	d
+XML_SYSTEM_PARAM_NAME_DSI	rkxml.h	11;"	d
+XML_SYSTEM_PARAM_NAME_DUI	rkxml.h	13;"	d
+XML_SYSTEM_PARAM_NAME_DUM	rkxml.h	12;"	d
+XML_SYSTEM_PARAM_NAME_HOUR_DATA_UPLOAD	rkxml.h	16;"	d
+XML_SYSTEM_PARAM_NAME_MINUTES_DATA_UPLOAD	rkxml.h	15;"	d
+XML_SYSTEM_PARAM_NAME_MN_NUM	rkxml.h	8;"	d
+XML_SYSTEM_PARAM_NAME_PASSWORD	rkxml.h	10;"	d
+XML_SYSTEM_PARAM_NAME_RTD_UPLOAD	rkxml.h	14;"	d
+XML_SYSTEM_PARAM_NAME_SIM_NUM	rkxml.h	7;"	d
+XML_SYSTEM_PARAM_NAME_SWITCH_CHANGE_UPLOAD	rkxml.h	18;"	d
+XML_SYSTEM_PARAM_NAME_SYSTEM_TYPE	rkxml.h	9;"	d
+XmlNode	rkxml.h	/^typedef mxml_node_t XmlNode;$/;"	t
+XmlType	rkxml.h	/^typedef mxml_type_t XmlType;$/;"	t
+_RK_COU_H_	rkcou.h	2;"	d
+_RK_CRC_H_	rkcrc.h	2;"	d
+_RK_DAM_H_	rkdam.h	2;"	d
+_RK_DEBUG_H_	rkdebug.h	2;"	d
+_RK_DSM_H_	rkdsm.h	2;"	d
+_RK_DTM_H_	rkdtm.h	2;"	d
+_RK_FORMULA_H_	rkfml.h	2;"	d
+_RK_HJT_H_	rkhjt.h	2;"	d
+_RK_HMI_H_	rkhmi.h	2;"	d
+_RK_INIT_H_	rkinit.h	2;"	d
+_RK_SCAN_LIB_H_	rkscan.h	2;"	d
+_RK_SERIAL_H_	rkser.h	2;"	d
+_RK_TYPE_H_	rktype.h	2;"	d
+_RK_XML_PARSE_H_	rkxml.h	2;"	d
+aical	rktype.h	/^typedef struct aical {$/;"	s
+aical_t	rktype.h	/^} aical_t;$/;"	t	typeref:struct:aical
+aiparam	rktype.h	/^typedef struct aiparam {$/;"	s
+aiparam_t	rktype.h	/^} aiparam_t;$/;"	t	typeref:struct:aiparam
+alarm	rktype.h	/^	uint8_t alarm;$/;"	m	struct:aiparam
+alarm	rktype.h	/^	uint8_t alarm;$/;"	m	struct:edev
+alarmen	rktype.h	/^	uint8_t		alarmen; \/* Warning Enable *\/$/;"	m	struct:sys
+analog	rktype.h	/^typedef struct analog {$/;"	s
+analog_t	rktype.h	/^} analog_t;$/;"	t	typeref:struct:analog
+avg	rktype.h	/^	float avg[4];$/;"	m	struct:statinfo
+baud	rktype.h	/^	uint32_t baud;$/;"	m	struct:com
+cfi	rktype.h	/^	struct cfi cfi;$/;"	m	struct:com	typeref:struct:com::cfi
+cfi	rktype.h	/^typedef struct cfi {$/;"	s
+cfi_t	rktype.h	/^} cfi_t;$/;"	t	typeref:struct:cfi
+cm	rktype.h	/^	CM_T cm; \/* Communication Mode *\/$/;"	m	struct:net
+cn	rkhjt.h	/^	uint16_t cn; \/* Command Number *\/$/;"	m	struct:hjtMsg
+cn	rkhjt.h	/^	uint16_t cn;$/;"	m	struct:hjtCnMap
+cnt	rktype.h	/^	long cnt[4];$/;"	m	struct:statinfo
+code	rkdsm.h	/^	char code[8];$/;"	m	struct:rkQueryCond
+code	rktype.h	/^	char code[8]; $/;"	m	struct:aiparam
+code	rktype.h	/^	char code[8]; \/* Channel code *\/$/;"	m	struct:edev
+code	rktype.h	/^	char code[8];$/;"	m	struct:dioparam
+codetbl	rktype.h	/^typedef struct codetbl{$/;"	s
+codetbl_t	rktype.h	/^} codetbl_t;$/;"	t	typeref:struct:codetbl
+com	rktype.h	/^	uint8_t com; \/* Uart Id : 0, 1, 2 ... *\/$/;"	m	struct:edev
+com	rktype.h	/^typedef struct com {$/;"	s
+com_t	rktype.h	/^} com_t;$/;"	t	typeref:struct:com
+connectfd	rkserver.c	/^static int connectfd;$/;"	v	file:
+connectfd	rktype.h	/^	int connectfd; \/* This Socket fd Was Defined When Link Has Been Connected *\/$/;"	m	struct:net
+context	rktype.h	/^typedef struct context {$/;"	s
+context_t	rktype.h	/^} context_t;$/;"	t	typeref:struct:context
+cou	rktype.h	/^	double cou[4];$/;"	m	struct:statinfo
+cp	rkhjt.h	/^	char cp[1024]; \/* Command Parameter *\/$/;"	m	struct:hjtMsg
+ctx	main.c	/^struct context ctx;$/;"	v	typeref:struct:context
+ctx	rkhjt.c	/^static struct context *ctx;$/;"	v	typeref:struct:context	file:
+cw	rkprotocol.h	/^	uint8_t		cw;$/;"	m	struct:rkMsgPkt
+da	rktype.h	/^	int da; \/* Device Address *\/$/;"	m	struct:edev
+db	rktype.h	/^	uint8_t db; \/* Data Bits *\/$/;"	m	struct:com
+dduen	rktype.h	/^	uint8_t		dduen; \/* Daily Data Upload Enable *\/$/;"	m	struct:sys
+debug	rktype.h	/^	uint8_t			debug; \/* Debug Flag *\/$/;"	m	struct:context
+dio	rktype.h	/^typedef struct dio {$/;"	s
+dio_t	rktype.h	/^} dio_t;$/;"	t	typeref:struct:dio
+dioparam	rktype.h	/^typedef struct dioparam {$/;"	s
+dioparam_t	rktype.h	/^} dioparam_t;$/;"	t	typeref:struct:dioparam
+dns	rktype.h	/^	char dns[16]; \/* Dns *\/$/;"	m	struct:net
+dsi	rktype.h	/^	uint16_t	dsi; \/* Data Save Interval(sec) *\/$/;"	m	struct:sys
+dt	rktype.h	/^	DT_T dt; \/* Data Type *\/$/;"	m	struct:edev
+dtmcfi	rkdtm.c	/^} dtmcfi;$/;"	v	typeref:struct:__anon2	file:
+dtmcom	rkdtm.c	/^static struct com dtmcom;$/;"	v	typeref:struct:com	file:
+dtmnet	rkdtm.c	/^static struct net *dtmnet;$/;"	v	typeref:struct:net	file:
+dui	rktype.h	/^	uint16_t	dui; \/* Data Upload Interval(sec) *\/$/;"	m	struct:sys
+dum	rktype.h	/^	DUM_T		dum; \/* Data Upload Mode *\/$/;"	m	struct:sys
+edev	rktype.h	/^typedef struct edev {$/;"	s
+edev_t	rktype.h	/^} edev_t;$/;"	t	typeref:struct:edev
+exit	rktype.h	/^	uint8_t			exit;$/;"	m	struct:context
+fd	rktype.h	/^	int fd; \/* Uart Device File Descriptor *\/$/;"	m	struct:com
+fd	rktype.h	/^	int fd;$/;"	m	struct:edev
+flag	rkhjt.h	/^	int flag; \/* if flag is 1, we need answer *\/$/;"	m	struct:hjtCnMap
+flag	rkhjt.h	/^	uint8_t flag; $/;"	m	struct:hjtMsg
+flag	rkprotocol.h	/^	uint8_t		flag;$/;"	m	struct:rkFtpMsgPkt
+flag	rktype.h	/^	uint8_t flag; \/* Data Acquisition Wether Normal Or Not *\/$/;"	m	struct:aiparam
+flag	rktype.h	/^	uint8_t flag; \/* When Data Acquisition Successful This Flag Been Set To 'N', Otherwise 'D' *\/$/;"	m	struct:edev
+fml	rktype.h	/^	char fml[64];  \/* Formula *\/$/;"	m	struct:aiparam
+fml	rktype.h	/^	char fml[64]; \/* Formula *\/$/;"	m	struct:edev
+fpath	rkscan.h	/^	char *fpath[MAX_LIB_NUM]; \/* Path *\/$/;"	m	struct:libMap
+func	rkhjt.h	/^	int (* func)(struct hjtMsg *msg, char **rsp, void *arg);$/;"	m	struct:hjtCnMap
+gw	rktype.h	/^	char gw[16]; \/* Gateway *\/$/;"	m	struct:net
+hduen	rktype.h	/^	uint8_t		hduen; \/* Hour Data Upload Enable *\/$/;"	m	struct:sys
+header	rkprotocol.h	/^	uint8_t		header[3];$/;"	m	struct:rkMsgPkt
+helpString	rkinit.c	/^static const char *helpString = $/;"	v	file:
+hjtCnMap	rkhjt.h	/^typedef struct hjtCnMap {$/;"	s
+hjtCnMap_t	rkhjt.h	/^} hjtCnMap_t;$/;"	t	typeref:struct:hjtCnMap
+hjtCnTbl	rkhjt.c	/^const struct hjtCnMap hjtCnTbl[] = {$/;"	v	typeref:struct:hjtCnMap
+hjtMsg	rkhjt.h	/^typedef struct hjtMsg {$/;"	s
+hjtMsg_t	rkhjt.h	/^} hjtMsg_t;$/;"	t	typeref:struct:hjtMsg
+hoffset	rktype.h	/^	uint16_t hoffset; \/* High Offset *\/$/;"	m	struct:aical
+id	rktype.h	/^	uint8_t id; \/* COM Id *\/$/;"	m	struct:com
+id	rktype.h	/^	uint8_t id; \/* Channel Id *\/$/;"	m	struct:edev
+id	rktype.h	/^	uint8_t id; \/* Channel id *\/$/;"	m	struct:aiparam
+id	rktype.h	/^	uint8_t id;$/;"	m	struct:dioparam
+init	rktype.h	/^	int (* init)(void *handle);$/;"	m	struct:cfi
+inuse	rktype.h	/^	uint8_t inuse; \/* If 0 Unuse, Otherwise Inuse *\/$/;"	m	struct:edev
+inuse	rktype.h	/^	uint8_t inuse;$/;"	m	struct:aiparam
+inuse	rktype.h	/^	uint8_t inuse;$/;"	m	struct:dioparam
+isconv	rktype.h	/^	uint8_t isconv; \/* Is Convert Value? *\/$/;"	m	struct:edev
+isconv	rktype.h	/^	uint8_t isconv;$/;"	m	struct:aiparam
+laddr	rktype.h	/^	char laddr[16]; \/* Local Ip Address *\/$/;"	m	struct:net
+len	rkprotocol.h	/^	uint16_t	len;$/;"	m	struct:rkFtpMsgPkt
+len	rkprotocol.h	/^	uint16_t	len;$/;"	m	struct:rkMsgPkt
+libMap	rkscan.h	/^typedef struct libMap {$/;"	s
+libMap_t	rkscan.h	/^} libMap_t;$/;"	t	typeref:struct:libMap
+libmap	rkscan.c	/^static struct libMap libmap;$/;"	v	typeref:struct:libMap	file:
+linkst	rktype.h	/^	uint8_t linkst; \/* Network Link State : 0 - Normal, 1 - Abnormal *\/$/;"	m	struct:net
+listenfd	rktype.h	/^	int listenfd; \/* Socket Used For Listen Client Request *\/$/;"	m	struct:net
+llv	rktype.h	/^	float	llv;$/;"	m	struct:edev
+llv	rktype.h	/^	float llv; \/* Lower Limit Value *\/$/;"	m	struct:aiparam
+lname	rkscan.h	/^	char *lname[MAX_LIB_NUM]; \/* Lib Name *\/$/;"	m	struct:libMap
+lock	rktype.h	/^	pthread_mutex_t lock;$/;"	m	struct:aiparam
+lock	rktype.h	/^	pthread_mutex_t lock;$/;"	m	struct:dioparam
+loffset	rktype.h	/^	uint16_t loffset; \/* Low Offset *\/$/;"	m	struct:aical
+lport	rktype.h	/^	uint16_t lport; \/* Local Port *\/$/;"	m	struct:net
+ltv	rktype.h	/^	float	ltv;$/;"	m	struct:edev
+ltv	rktype.h	/^	float ltv; \/* Lower Threshold Value *\/$/;"	m	struct:aiparam
+m_aDynamicProtocolSet	rktype.h	/^	char			m_aDynamicProtocolSet[512];$/;"	m	struct:context
+m_aVersion	rktype.h	/^	char			m_aVersion[3][8];$/;"	m	struct:context
+m_fValue	rktype.h	/^	float m_fValue[MAX_CODE_TBL_NUM];$/;"	m	struct:codetbl
+m_nServerSockFd	rktype.h	/^	int				m_nServerSockFd;$/;"	m	struct:context
+m_pCmdLineArg	rktype.h	/^	char			*m_pCmdLineArg[MAX_CMDLINE_ARG_NUM]; $/;"	m	struct:context
+m_pCode	rktype.h	/^	char *m_pCode[MAX_CODE_TBL_NUM];$/;"	m	struct:codetbl
+m_tAnalogParam	rktype.h	/^	struct analog	m_tAnalogParam;$/;"	m	struct:context	typeref:struct:context::analog
+m_tCalibrateParam	rktype.h	/^	struct aical	m_tCalibrateParam[AI_NUM];$/;"	m	struct:analog	typeref:struct:analog::aical
+m_tChannelParam	rktype.h	/^	struct aiparam	m_tChannelParam[AI_NUM];$/;"	m	struct:analog	typeref:struct:analog::aiparam
+m_tChannelParam	rktype.h	/^	struct edev m_tChannelParam[EI_NUM]; \/* External Instrument *\/$/;"	m	struct:uart	typeref:struct:uart::edev
+m_tCodeTable	rktype.h	/^	struct codetbl	m_tCodeTable;$/;"	m	struct:context	typeref:struct:context::codetbl
+m_tComParam	rktype.h	/^	struct com	m_tComParam[COM_NUM];$/;"	m	struct:uart	typeref:struct:uart::com
+m_tDiParam	rktype.h	/^	struct dioparam m_tDiParam[DI_NUM];$/;"	m	struct:dio	typeref:struct:dio::dioparam
+m_tDioParam	rktype.h	/^	struct dio		m_tDioParam;$/;"	m	struct:context	typeref:struct:context::dio
+m_tDoParam	rktype.h	/^	struct dioparam m_tDoParam[DO_NUM];$/;"	m	struct:dio	typeref:struct:dio::dioparam
+m_tNetParam	rktype.h	/^	struct net		m_tNetParam;$/;"	m	struct:context	typeref:struct:context::net
+m_tSystemParam	rktype.h	/^	struct sys		m_tSystemParam;$/;"	m	struct:context	typeref:struct:context::sys
+m_tUartParam	rktype.h	/^	struct uart		m_tUartParam;$/;"	m	struct:context	typeref:struct:context::uart
+m_uAlarmFlag	rktype.h	/^	uint8_t			m_uAlarmFlag;$/;"	m	struct:analog
+m_uDiChangedFlag	rktype.h	/^	uint8_t			m_uDiChangedFlag; \/* This Flag Been Set When DI Changed *\/$/;"	m	struct:dio
+m_uLoginFlag	rktype.h	/^	uint8_t			m_uLoginFlag;$/;"	m	struct:context
+main	main.c	/^int main(int argc, char *argv[])$/;"	f
+mask	rktype.h	/^	char mask[16]; \/* Subnet Mask *\/$/;"	m	struct:net
+max	rktype.h	/^	float max[4];$/;"	m	struct:statinfo
+mduen	rktype.h	/^	uint8_t		mduen; \/* Minute Data Upload Enable *\/$/;"	m	struct:sys
+min	rktype.h	/^	float min[4];$/;"	m	struct:statinfo
+mn	rkhjt.h	/^	char mn[16]; \/* Monitor Number *\/$/;"	m	struct:hjtMsg
+mn	rktype.h	/^	char		mn[16]; \/* Device Id *\/$/;"	m	struct:sys
+msg	rkprotocol.h	/^	uint8_t		msg[RK_FTP_MESSAGE_MAX_LEN];$/;"	m	struct:rkFtpMsgPkt
+msg	rkprotocol.h	/^	uint8_t 	msg[RK_PROTOCOL_MESSAGE_MAX_LEN];$/;"	m	struct:rkMsgPkt
+msgTblCap	rkdsm.c	/^static int msgTblCap[] = { MAX_RTM_REC_NUM, MAX_MOM_REC_NUM, MAX_HOM_REC_NUM, MAX_DOM_REC_NUM, MAX_DIM_REC_NUM, MAX_AOM_REC_NUM};$/;"	v	file:
+msgTblName	rkdsm.c	/^static char *msgTblName[] = { RTM_TBL_NAME, MOM_TBL_NAME, HOM_TBL_NAME, DOM_TBL_NAME, DIM_TBL_NAME, AOM_TBL_NAME};$/;"	v	file:
+msgdb	rkdsm.c	/^static sqlite3 *rtddb, *msgdb;$/;"	v	file:
+mutex	rktype.h	/^	pthread_mutex_t mutex;$/;"	m	struct:edev
+mutex	rktype.h	/^	pthread_mutex_t mutex;$/;"	m	struct:net
+name	rktype.h	/^	char *(* name)(void);$/;"	m	struct:cfi
+net	rktype.h	/^typedef struct net {$/;"	s
+net_t	rktype.h	/^} net_t;$/;"	t	typeref:struct:net
+opnd	rkfml.h	/^	float opnd[FML_STACK_SIZE]; \/* used to store operand *\/$/;"	m	struct:rkFmlStack
+opndTop	rkfml.h	/^	uint8_t opndTop; \/* stack top of operand *\/$/;"	m	struct:rkFmlStack
+optr	rkfml.h	/^	char optr[FML_STACK_SIZE]; \/* used to store operator *\/$/;"	m	struct:rkFmlStack
+optrPriTbl	rkfml.c	/^static const char optrPriTbl[OPTR_TABLE_SIZE][OPTR_TABLE_SIZE] =$/;"	v	file:
+optrTbl	rkfml.c	/^static const char optrTbl[OPTR_TABLE_SIZE] = { '+', '-', '*', '\/', '(', ')', '^' };$/;"	v	file:
+optrTop	rkfml.h	/^	uint8_t optrTop; \/* stack top of operator *\/$/;"	m	struct:rkFmlStack
+parity	rktype.h	/^	PARITY_T parity; \/* Parity Mode : ODD, EVEN or NONE *\/$/;"	m	struct:com
+pno	rkhjt.h	/^	uint16_t pno; \/* Packet NO. *\/$/;"	m	struct:hjtMsg
+pnum	rkhjt.h	/^	uint16_t pnum; \/* Packet Number *\/$/;"	m	struct:hjtMsg
+printai	rkdebug.c	/^void printai(struct analog analog)$/;"	f
+printdio	rkdebug.c	/^void printdio(struct dio dio)$/;"	f
+printnet	rkdebug.c	/^void printnet(struct net net)$/;"	f
+printsys	rkdebug.c	/^void printsys(struct sys sys)$/;"	f
+printuart	rkdebug.c	/^void printuart(struct uart uart, int flag)$/;"	f
+proto	rktype.h	/^	char proto[32]; \/* Library File Name *\/$/;"	m	struct:com
+pw	rkhjt.h	/^	char pw[8]; \/* Password *\/$/;"	m	struct:hjtMsg
+pw	rktype.h	/^	char		pw[8]; \/* Password *\/$/;"	m	struct:sys
+qn	rkhjt.h	/^	char qn[24]; \/* Request Number *\/$/;"	m	struct:hjtMsg
+ra	rktype.h	/^	int ra; \/* Register Address *\/$/;"	m	struct:edev
+raddr	rktype.h	/^	char raddr[16];  \/* Remote Ip Address *\/$/;"	m	struct:net
+rduen	rktype.h	/^	uint8_t		rduen; \/* Real-time Data Upload Enable *\/$/;"	m	struct:sys
+recv	rkdtm.c	/^	int (* recv)(char *msg, uint32_t len, uint32_t timeout_ms);$/;"	m	struct:__anon2	file:
+rkCheckLoginPermit	rkprotocol.c	/^uint8_t rkCheckLoginPermit(rkMsgPkt_t *pkt)$/;"	f
+rkCouCalcStat	rkcou.c	/^int rkCouCalcStat(const char *code, struct statinfo *stat, float val)$/;"	f
+rkCouGetCTblIndex	rkcou.c	/^int rkCouGetCTblIndex(const char *scode)$/;"	f
+rkCouGetCTblVal	rkcou.c	/^int rkCouGetCTblVal(const char *code, float *val)$/;"	f
+rkCouInitCTbl	rkcou.c	/^int rkCouInitCTbl(struct codetbl *ctbl)$/;"	f
+rkCouUpdateCTbl	rkcou.c	/^int rkCouUpdateCTbl(const char *code, float val)$/;"	f
+rkCrc16	rkcrc.c	/^uint16_t rkCrc16(char *buf, uint16_t len)$/;"	f
+rkDamAiDataProc	rkdam.c	/^int rkDamAiDataProc(struct aiparam *ai, struct aical *cal)$/;"	f
+rkDamAiDataSample	rkdam.c	/^int rkDamAiDataSample(struct aiparam *ai)$/;"	f
+rkDamAiInit	rkdam.c	/^static int rkDamAiInit(struct analog *analog)$/;"	f	file:
+rkDamCalcStat	rkdam.c	/^int rkDamCalcStat(const char *code, struct statinfo *stat, float val)$/;"	f
+rkDamClrStatData	rkdam.c	/^int rkDamClrStatData(struct context *ctx, STAT_DATA_TYPE type)$/;"	f
+rkDamDiRead	rkdam.c	/^int rkDamDiRead(uint16_t *val)$/;"	f
+rkDamDioInit	rkdam.c	/^static int rkDamDioInit(struct dio *dio)$/;"	f	file:
+rkDamEiChildThread	rkdam.c	/^void rkDamEiChildThread(void *handle)$/;"	f
+rkDamEiDataProc	rkdam.c	/^int rkDamEiDataProc(struct edev *ei)$/;"	f
+rkDamEiInit	rkdam.c	/^static int rkDamEiInit(struct uart *uart)$/;"	f	file:
+rkDamEiThread	rkdam.c	/^void rkDamEiThread(void *handle)$/;"	f
+rkDamGetAiVal	rkdam.c	/^int rkDamGetAiVal(struct analog *analog)$/;"	f
+rkDamGetDiVal	rkdam.c	/^int rkDamGetDiVal(struct dio *dio)$/;"	f
+rkDamInit	rkdam.c	/^int rkDamInit(struct context *ctx)$/;"	f
+rkDamIoThread	rkdam.c	/^void rkDamIoThread(void *handle)$/;"	f
+rkDamPushAiInfo	rkdam.c	/^int rkDamPushAiInfo(struct analog *analog)$/;"	f
+rkDamPushDiInfo	rkdam.c	/^int rkDamPushDiInfo(struct dioparam *dip)$/;"	f
+rkDamPushDoInfo	rkdam.c	/^int rkDamPushDoInfo(struct dioparam *dop)$/;"	f
+rkDamPushEiInfo	rkdam.c	/^int rkDamPushEiInfo(struct edev *ei)$/;"	f
+rkDamRun	rkdam.c	/^void rkDamRun(void *handle)$/;"	f
+rkDamSetDoVal	rkdam.c	/^int rkDamSetDoVal(struct dioparam *dop)$/;"	f
+rkDsmInit	rkdsm.c	/^int rkDsmInit(struct context *ctx)$/;"	f
+rkDsmRun	rkdsm.c	/^void rkDsmRun(void *handle)$/;"	f
+rkDsmSaveMsg	rkdsm.c	/^int rkDsmSaveMsg(MSG_TYPE_T type, char *msg)$/;"	f
+rkDtmCloseDtu	rkdtm.c	/^int rkDtmCloseDtu()$/;"	f
+rkDtmDtuInit	rkdtm.c	/^int rkDtmDtuInit(struct com *com)$/;"	f
+rkDtmEthInit	rkdtm.c	/^int rkDtmEthInit(struct net *net)$/;"	f
+rkDtmInit	rkdtm.c	/^int rkDtmInit(struct context *ctx)$/;"	f
+rkDtmMonitorThread	rkdtm.c	/^void rkDtmMonitorThread(void *handle)$/;"	f
+rkDtmProcHjtMsg	rkdtm.c	/^int rkDtmProcHjtMsg(struct hjtMsg *msg)$/;"	f
+rkDtmRecv	rkdtm.c	/^int rkDtmRecv(char *msg, uint32_t len, uint32_t timeout_ms)$/;"	f
+rkDtmRecvHjtMsg	rkdtm.c	/^int rkDtmRecvHjtMsg(struct hjtMsg *msg, uint32_t timeout_ms)$/;"	f
+rkDtmRecvThread	rkdtm.c	/^void rkDtmRecvThread(void *handle)$/;"	f
+rkDtmReuseDtu	rkdtm.c	/^int rkDtmReuseDtu()$/;"	f
+rkDtmRun	rkdtm.c	/^void rkDtmRun(void *handle)$/;"	f
+rkDtmSend	rkdtm.c	/^int rkDtmSend(const char *msg, uint32_t len)$/;"	f
+rkDtmSigHandler	rkdtm.c	/^void rkDtmSigHandler(int sig)$/;"	f
+rkDtmUploadThread	rkdtm.c	/^void rkDtmUploadThread(void *handle)$/;"	f
+rkFillMsgTail	rkprotocol.c	/^void rkFillMsgTail(rkMsgPkt_t *pkt)$/;"	f
+rkFmlBasicOptr	rkfml.c	/^float rkFmlBasicOptr(float x, char optr, float y)$/;"	f
+rkFmlCmpOptrPri	rkfml.c	/^char rkFmlCmpOptrPri(const char dest, const char src)$/;"	f
+rkFmlConvExpr	rkfml.c	/^int rkFmlConvExpr(const char *in, char *out, const char *code)$/;"	f
+rkFmlDropBlankSpace	rkfml.c	/^int rkFmlDropBlankSpace(char *buf)$/;"	f
+rkFmlEvaluateExpr	rkfml.c	/^float rkFmlEvaluateExpr(const char *expr)$/;"	f
+rkFmlGetOptrIndex	rkfml.c	/^int rkFmlGetOptrIndex(const char optr)$/;"	f
+rkFmlIsNum	rkfml.c	/^int rkFmlIsNum(const char *buf)$/;"	f
+rkFmlIsOptr	rkfml.c	/^int rkFmlIsOptr(const char in)$/;"	f
+rkFmlLookupSymTbl	rkfml.c	/^int rkFmlLookupSymTbl(const char *sym, float *val)$/;"	f
+rkFmlStack	rkfml.h	/^typedef struct rkFmlStack {$/;"	s
+rkFmlStackGetTopElement	rkfml.c	/^int rkFmlStackGetTopElement(struct rkFmlStack *stack, STACK_TYPE_T type, void *val)$/;"	f
+rkFmlStackInit	rkfml.c	/^int rkFmlStackInit(struct rkFmlStack *stack)$/;"	f
+rkFmlStackIsEmpty	rkfml.c	/^int rkFmlStackIsEmpty(struct rkFmlStack *stack, STACK_TYPE_T type)$/;"	f
+rkFmlStackIsFull	rkfml.c	/^int rkFmlStackIsFull(struct rkFmlStack *stack, STACK_TYPE_T type)$/;"	f
+rkFmlStackPop	rkfml.c	/^int rkFmlStackPop(struct rkFmlStack *stack, STACK_TYPE_T type, void *val)$/;"	f
+rkFmlStackPush	rkfml.c	/^int rkFmlStackPush(struct rkFmlStack *stack, STACK_TYPE_T type, const void *val)$/;"	f
+rkFmlStack_t	rkfml.h	/^} rkFmlStack_t;$/;"	t	typeref:struct:rkFmlStack
+rkFmlSymTbl	rkfml.h	/^typedef struct rkFmlSymTbl{$/;"	s
+rkFmlSymTblInit	rkfml.c	/^int rkFmlSymTblInit()$/;"	f
+rkFmlSymTbl_t	rkfml.h	/^} rkFmlSymTbl_t;$/;"	t	typeref:struct:rkFmlSymTbl
+rkFmlUpdateSymTbl	rkfml.c	/^int rkFmlUpdateSymTbl(const char *sym, float val)$/;"	f
+rkFtpMsgPkt	rkprotocol.h	/^typedef struct rkFtpMsgPkt {$/;"	s
+rkFtpMsgPkt_t	rkprotocol.h	/^} rkFtpMsgPkt_t;$/;"	t	typeref:struct:rkFtpMsgPkt
+rkGenEchoMsgOfGetConfig	rkprotocol.c	/^int rkGenEchoMsgOfGetConfig(rkMsgPkt_t *recvMsg, rkMsgPkt_t *sendMsg)$/;"	f
+rkGenEchoMsgOfGetFirmwareVersion	rkprotocol.c	/^int rkGenEchoMsgOfGetFirmwareVersion(rkMsgPkt_t *recvMsg, rkMsgPkt_t *sendMsg)$/;"	f
+rkGenEchoMsgOfGetSupportedProtocol	rkprotocol.c	/^int rkGenEchoMsgOfGetSupportedProtocol(rkMsgPkt_t *sendMsg)$/;"	f
+rkGenEchoMsgOfLogin	rkprotocol.c	/^int rkGenEchoMsgOfLogin(rkMsgPkt_t *recvMsg, rkMsgPkt_t *sendMsg)$/;"	f
+rkGenEchoMsgOfPutConfig	rkprotocol.c	/^int rkGenEchoMsgOfPutConfig(rkMsgPkt_t *recvMsg, rkMsgPkt_t *sendMsg)$/;"	f
+rkGenEchoMsgOfRebootDevice	rkprotocol.c	/^int rkGenEchoMsgOfRebootDevice(rkMsgPkt_t *sendMsg)$/;"	f
+rkGenEchoMsgOfUpgradeFirmware	rkprotocol.c	/^int rkGenEchoMsgOfUpgradeFirmware(int type, rkMsgPkt_t *recvMsg, rkMsgPkt_t *sendMsg)$/;"	f
+rkHandleReceivedMsg	rkserver.c	/^int rkHandleReceivedMsg(rkMsgPkt_t *recvBuffer) $/;"	f
+rkHjtExeCmd1000	rkhjt.c	/^int rkHjtExeCmd1000(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtExeCmd1001	rkhjt.c	/^int rkHjtExeCmd1001(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtExeCmd1012	rkhjt.c	/^int rkHjtExeCmd1012(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtExeCmd1022	rkhjt.c	/^int rkHjtExeCmd1022(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtExeCmd1032	rkhjt.c	/^int rkHjtExeCmd1032(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtExeCmd1042	rkhjt.c	/^int rkHjtExeCmd1042(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtExeCmd1062	rkhjt.c	/^int rkHjtExeCmd1062(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtExeCmd1072	rkhjt.c	/^int rkHjtExeCmd1072(struct hjtMsg *msg, char **rsp, void  *arg)$/;"	f
+rkHjtExeCmd1092	rkhjt.c	/^int rkHjtExeCmd1092(struct hjtMsg *msg, char **rsp, void  *arg)$/;"	f
+rkHjtExeCmd2012	rkhjt.c	/^int rkHjtExeCmd2012(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtExeCmd2022	rkhjt.c	/^int rkHjtExeCmd2022(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtExeCmd3011	rkhjt.c	/^int rkHjtExeCmd3011(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtExeCmd3012	rkhjt.c	/^int rkHjtExeCmd3012(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtExeCmd3013	rkhjt.c	/^int rkHjtExeCmd3013(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtExeCmd3014	rkhjt.c	/^int rkHjtExeCmd3014(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtFillMsgEnd	rkhjt.c	/^void rkHjtFillMsgEnd(char *msg)$/;"	f
+rkHjtFillMsgHdr	rkhjt.c	/^void rkHjtFillMsgHdr(uint16_t cn, char *buf)$/;"	f
+rkHjtFltToStr	rkhjt.c	/^static char *rkHjtFltToStr(float val)$/;"	f	file:
+rkHjtFree	rkhjt.c	/^void rkHjtFree(void *handle)$/;"	f
+rkHjtGenMsg1011	rkhjt.c	/^int rkHjtGenMsg1011(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtGenMsg1021	rkhjt.c	/^int rkHjtGenMsg1021(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtGenMsg1031	rkhjt.c	/^int rkHjtGenMsg1031(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtGenMsg1041	rkhjt.c	/^int rkHjtGenMsg1041(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtGenMsg1061	rkhjt.c	/^int rkHjtGenMsg1061(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtGenMsg1091	rkhjt.c	/^int rkHjtGenMsg1091(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtGenMsg2011	rkhjt.c	/^int rkHjtGenMsg2011(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtGenMsg2021	rkhjt.c	/^int rkHjtGenMsg2021(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtGenMsg2031	rkhjt.c	/^int rkHjtGenMsg2031(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtGenMsg2041	rkhjt.c	/^int rkHjtGenMsg2041(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtGenMsg2051	rkhjt.c	/^int rkHjtGenMsg2051(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtGenMsg2061	rkhjt.c	/^int rkHjtGenMsg2061(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtGenMsg2071	rkhjt.c	/^int rkHjtGenMsg2071(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtGenMsg2072	rkhjt.c	/^int rkHjtGenMsg2072(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtGenMsg2081	rkhjt.c	/^int rkHjtGenMsg2081(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtGenMsg3051	rkhjt.c	/^int rkHjtGenMsg3051(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtGenMsg9011	rkhjt.c	/^int rkHjtGenMsg9011(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtGenMsg9012	rkhjt.c	/^int rkHjtGenMsg9012(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtGenMsg9013	rkhjt.c	/^int rkHjtGenMsg9013(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtGenMsg9014	rkhjt.c	/^int rkHjtGenMsg9014(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtInit	rkhjt.c	/^int rkHjtInit(struct context *handle)$/;"	f
+rkHjtParseMsg	rkhjt.c	/^int rkHjtParseMsg(char *raw, struct hjtMsg *msg, HJT_ERR_T *err)$/;"	f
+rkHmiInit	rkhmi.c	/^int rkHmiInit()$/;"	f
+rkHmiRun	rkhmi.c	/^void rkHmiRun(void *handle)$/;"	f
+rkInitAiCalParam	rkinit.c	/^void rkInitAiCalParam(struct analog *analog)$/;"	f
+rkInitAnalogParam	rkinit.c	/^void rkInitAnalogParam(struct analog *analog)$/;"	f
+rkInitConfigParam	rkinit.c	/^void rkInitConfigParam(struct context *ctx)$/;"	f
+rkInitDioParam	rkinit.c	/^void rkInitDioParam(struct dio *dio)$/;"	f
+rkInitMsgHeader	rkprotocol.c	/^void rkInitMsgHeader(rkMsgPkt_t *pkt, uint8_t cw)$/;"	f
+rkInitNetParam	rkinit.c	/^void rkInitNetParam(struct net *net)$/;"	f
+rkInitSysParam	rkinit.c	/^void rkInitSysParam(struct sys *sys)$/;"	f
+rkInitUartParam	rkinit.c	/^void rkInitUartParam(struct uart *uart)$/;"	f
+rkLibGetPath	rkscan.c	/^const char *rkLibGetPath(const char *lname)$/;"	f
+rkLibScan	rkscan.c	/^int rkLibScan(const char *path)$/;"	f
+rkMsgPkt	rkprotocol.h	/^typedef struct rkMsgPkt {$/;"	s
+rkMsgPkt_t	rkprotocol.h	/^} rkMsgPkt_t;$/;"	t	typeref:struct:rkMsgPkt
+rkParseCmdLineArg	rkinit.c	/^static int rkParseCmdLineArg(struct context *ctx, int argc, char *argv[])$/;"	f	file:
+rkParseParamConfig	rkprotocol.c	/^int rkParseParamConfig(rkMsgPkt_t *pkt)$/;"	f
+rkParseUsrCfg	rkinit.c	/^static int rkParseUsrCfg(struct context *ctx)$/;"	f	file:
+rkPrintMsg	rkserver.c	/^void rkPrintMsg(rkMsgPkt_t *pkt, int recvFlag)$/;"	f
+rkPushAnalogConfigTlvsToMsg	rkprotocol.c	/^int rkPushAnalogConfigTlvsToMsg(rkMsgPkt_t *pkt)$/;"	f
+rkPushComConfigTlvsToMsg	rkprotocol.c	/^int rkPushComConfigTlvsToMsg(rkMsgPkt_t *pkt)$/;"	f
+rkPushConfigTlvToMSgByTag	rkprotocol.c	/^int rkPushConfigTlvToMSgByTag(rkMsgPkt_t *pkt, uint16_t tag)$/;"	f
+rkPushConfigTlvsToMsg	rkprotocol.c	/^int rkPushConfigTlvsToMsg(rkMsgPkt_t *pkt, enum ParamType type)$/;"	f
+rkPushDioConfigTlvsToMsg	rkprotocol.c	/^int rkPushDioConfigTlvsToMsg(rkMsgPkt_t *pkt)$/;"	f
+rkPushDtuConfigTlvsToMsg	rkprotocol.c	/^int rkPushDtuConfigTlvsToMsg(rkMsgPkt_t *pkt)$/;"	f
+rkPushNetConfigTlvsToMsg	rkprotocol.c	/^int rkPushNetConfigTlvsToMsg(rkMsgPkt_t *pkt)$/;"	f
+rkPushSerialConfigTlvsToMsg	rkprotocol.c	/^int rkPushSerialConfigTlvsToMsg(rkMsgPkt_t *pkt)$/;"	f
+rkPushSysConfigTlvsToMsg	rkprotocol.c	/^int rkPushSysConfigTlvsToMsg(rkMsgPkt_t *pkt)$/;"	f
+rkPushTlvToMsg	rkprotocol.c	/^int rkPushTlvToMsg(rkMsgPkt_t *pkt, uint16_t tag, uint16_t len, const void *value)$/;"	f
+rkQueryCond	rkdsm.h	/^typedef struct rkQueryCond{$/;"	s
+rkQueryCond_t	rkdsm.h	/^} rkQueryCond_t;$/;"	t	typeref:struct:rkQueryCond
+rkRebootDevice	rkserver.c	/^void rkRebootDevice()$/;"	f
+rkRecvMsgBoth	rkdtm.c	/^int rkRecvMsgBoth(char *msg, uint32_t len, uint32_t timeout_ms)$/;"	f
+rkRecvMsgByDtu	rkdtm.c	/^int rkRecvMsgByDtu(char *msg, uint32_t len, uint32_t timeout_ms)$/;"	f
+rkRecvMsgByEth	rkdtm.c	/^int rkRecvMsgByEth(char *msg, uint32_t len, uint32_t timeout_ms)$/;"	f
+rkReloadUsrCfg	rkinit.c	/^int rkReloadUsrCfg(struct context *ctx)$/;"	f
+rkRiuThread	rkdsm.c	/^void rkRiuThread(void *handle)$/;"	f
+rkRtdSaveThread	rkdsm.c	/^void rkRtdSaveThread(void *handle)$/;"	f
+rkScanDynamicProtocol	rkinit.c	/^int rkScanDynamicProtocol(struct context *ctx)$/;"	f
+rkSendBeatPktByEth	rkdtm.c	/^int rkSendBeatPktByEth(void)$/;"	f
+rkSendMsgBoth	rkdtm.c	/^int rkSendMsgBoth(const char *msg, uint32_t len)$/;"	f
+rkSendMsgByDtu	rkdtm.c	/^int rkSendMsgByDtu(const char *msg, uint32_t len)$/;"	f
+rkSendMsgByEth	rkdtm.c	/^int rkSendMsgByEth(const char *msg, uint32_t len)$/;"	f
+rkSerClose	rkser.c	/^int rkSerClose(int fd)$/;"	f
+rkSerOpen	rkser.c	/^int rkSerOpen(struct com *com)$/;"	f
+rkSerRecv	rkser.c	/^int rkSerRecv(char *buf, uint32_t len, int timeout, int fd)$/;"	f
+rkSerSend	rkser.c	/^int rkSerSend(const char *buf, uint32_t len, int fd)$/;"	f
+rkServerSendMsg	rkserver.c	/^int rkServerSendMsg(rkMsgPkt_t *pkt)$/;"	f
+rkSysInit	rkinit.c	/^int rkSysInit(struct context *ctx, int argc, char *argv[])$/;"	f
+rkTcpClntInit	rkdtm.c	/^int rkTcpClntInit(struct net *net)$/;"	f
+rkTcpServerThread	rkserver.c	/^void rkTcpServerThread(void *arg)$/;"	f
+rkTcpSocketInit	rkserver.c	/^int rkTcpSocketInit()$/;"	f
+rkTcpSrvInit	rkdtm.c	/^int rkTcpSrvInit(struct net *net)$/;"	f
+rkUdpClntInit	rkdtm.c	/^int rkUdpClntInit(struct net *net)$/;"	f
+rkUdpSrvInit	rkdtm.c	/^int rkUdpSrvInit(struct net *net)$/;"	f
+rkVerifyMsgTail	rkprotocol.c	/^int rkVerifyMsgTail(rkMsgPkt_t *pkt)$/;"	f
+rkXmlFree	rkxml.c	/^void rkXmlFree(XmlNode *node) $/;"	f
+rkXmlGenAiCalibFile	rkxml.c	/^int rkXmlGenAiCalibFile(struct aical *cal, uint8_t num)$/;"	f
+rkXmlGetNodeDepth	rkxml.c	/^int rkXmlGetNodeDepth(XmlNode *node)$/;"	f
+rkXmlLoadCallBack	rkxml.c	/^XmlType rkXmlLoadCallBack(XmlNode *node)$/;"	f
+rkXmlLoadFile	rkxml.c	/^XmlNode *rkXmlLoadFile(const char *fileName)$/;"	f
+rkXmlNewXml	rkxml.c	/^XmlNode *rkXmlNewXml()$/;"	f
+rkXmlParseAiCalParam	rkxml.c	/^int rkXmlParseAiCalParam(struct analog *analog)$/;"	f
+rkXmlParseAnalogParam	rkxml.c	/^int rkXmlParseAnalogParam(struct analog *analog)$/;"	f
+rkXmlParseDioParam	rkxml.c	/^int rkXmlParseDioParam(struct dio *handle)$/;"	f
+rkXmlParseNetParam	rkxml.c	/^int rkXmlParseNetParam(struct net *handle)$/;"	f
+rkXmlParseSysParam	rkxml.c	/^int rkXmlParseSysParam(struct sys *handle)$/;"	f
+rkXmlParseUartParam	rkxml.c	/^int rkXmlParseUartParam(struct uart *handle)$/;"	f
+rkXmlSaveAllAnalogParam	rkxml.c	/^int rkXmlSaveAllAnalogParam(struct analog *analog)$/;"	f
+rkXmlSaveAllSysParam	rkxml.c	/^int rkXmlSaveAllSysParam(struct sys *sys)$/;"	f
+rkXmlSaveAllUartParam	rkxml.c	/^int rkXmlSaveAllUartParam(struct uart *uart)$/;"	f
+rkXmlSaveAnalogParam	rkxml.c	/^int rkXmlSaveAnalogParam(int channel, struct aiparam *param)$/;"	f
+rkXmlSaveCallBack	rkxml.c	/^const char *rkXmlSaveCallBack(XmlNode *node, int where)$/;"	f
+rkXmlSaveComParam	rkxml.c	/^int rkXmlSaveComParam(int channel, struct com *param)$/;"	f
+rkXmlSaveDioParam	rkxml.c	/^int rkXmlSaveDioParam(struct dio *dio)$/;"	f
+rkXmlSaveFile	rkxml.c	/^int rkXmlSaveFile(const char *fileName, XmlNode *declareNode)$/;"	f
+rkXmlSaveNetParam	rkxml.c	/^int rkXmlSaveNetParam(struct net *net) $/;"	f
+rkXmlSaveSysParam	rkxml.c	/^int rkXmlSaveSysParam(const char *name, void *value)$/;"	f
+rkXmlSaveUartParam	rkxml.c	/^int rkXmlSaveUartParam(int channel, struct edev *param)$/;"	f
+rkXmlSetGroupParamVal	rkxml.c	/^int rkXmlSetGroupParamVal(XmlNode *parent, const char *groupName, const char *paramName, const char *paramVal)$/;"	f
+rkXmlSetParamVal	rkxml.c	/^int rkXmlSetParamVal(XmlNode *parent, const char *paramName, const char *paramVal)$/;"	f
+rkXmlSetWorkDir	rkxml.c	/^void rkXmlSetWorkDir(const char *dir)$/;"	f
+rport	rktype.h	/^	uint16_t rport; \/* Remote Port *\/$/;"	m	struct:net
+rtddb	rkdsm.c	/^static sqlite3 *rtddb, *msgdb;$/;"	v	file:
+rtdfalg	rktype.h	/^	uint8_t		rtdfalg; \/* Use RTD-Flag Or Not *\/$/;"	m	struct:sys
+run	rktype.h	/^	int (* run)(void *handle);$/;"	m	struct:cfi
+sb	rktype.h	/^	uint8_t sb; \/* Stop Bits *\/$/;"	m	struct:com
+sduen	rktype.h	/^	uint8_t		sduen; \/* Switch Data Upload Enable *\/$/;"	m	struct:sys
+send	rkdtm.c	/^	int (* send)(const char *msg, uint32_t len);$/;"	m	struct:__anon2	file:
+seq	rkprotocol.h	/^	uint16_t	seq;$/;"	m	struct:rkFtpMsgPkt
+sigHandler	main.c	/^void sigHandler(int sig)$/;"	f
+sim	rktype.h	/^	char		sim[16]; \/* SIM Card Number *\/$/;"	m	struct:sys
+size	rkscan.h	/^	uint8_t size; \/* Current Lib Number *\/$/;"	m	struct:libMap
+st	rkhjt.h	/^	uint8_t st; \/* System Type *\/$/;"	m	struct:hjtMsg
+st	rktype.h	/^	uint8_t		st; \/* System Type *\/$/;"	m	struct:sys
+startTm	rkdsm.h	/^	time_t startTm; \/* Start time *\/$/;"	m	struct:rkQueryCond
+stat	rktype.h	/^	struct statinfo stat;$/;"	m	struct:aiparam	typeref:struct:aiparam::statinfo
+stat	rktype.h	/^	struct statinfo stat;$/;"	m	struct:edev	typeref:struct:edev::statinfo
+statinfo	rktype.h	/^typedef struct statinfo{$/;"	s
+statinfo_t	rktype.h	/^} statinfo_t;$/;"	t	typeref:struct:statinfo
+stopTm	rkdsm.h	/^	time_t stopTm; \/* Stop time *\/$/;"	m	struct:rkQueryCond
+sum	rktype.h	/^	double sum[4];$/;"	m	struct:statinfo
+sym	rkfml.h	/^	char sym[FML_SYMBOL_TABLE_MAX_NUM][8]; \/* symbol *\/$/;"	m	struct:rkFmlSymTbl
+symtbl	rkfml.c	/^static struct rkFmlSymTbl symtbl;$/;"	v	typeref:struct:rkFmlSymTbl	file:
+sys	rktype.h	/^typedef struct sys {$/;"	s
+sys_t	rktype.h	/^} sys_t;$/;"	t	typeref:struct:sys
+tabType	rkdsm.h	/^	DBTABLE_T tabType; \/* Table type *\/$/;"	m	struct:rkQueryCond
+table_crc_hi	rkcrc.c	/^static const uint8_t table_crc_hi[] = {$/;"	v	file:
+table_crc_lo	rkcrc.c	/^static const uint8_t table_crc_lo[] = {$/;"	v	file:
+type	rktype.h	/^	AI_T type; \/* Analog Variable Type, mA or V *\/$/;"	m	struct:aiparam
+uart	rktype.h	/^typedef struct uart {$/;"	s
+uart_t	rktype.h	/^} uart_t;$/;"	t	typeref:struct:uart
+ulv	rktype.h	/^	float	ulv;$/;"	m	struct:edev
+ulv	rktype.h	/^	float ulv; \/* Upper Limit Value *\/$/;"	m	struct:aiparam
+usefml	rktype.h	/^	uint8_t usefml; \/* Use Formula *\/$/;"	m	struct:aiparam
+usefml	rktype.h	/^	uint8_t usefml; \/* Use Formula ? *\/$/;"	m	struct:edev
+utv	rktype.h	/^	float	utv;$/;"	m	struct:edev
+utv	rktype.h	/^	float utv; \/* Upper Threshold Value *\/$/;"	m	struct:aiparam
+val	rkfml.h	/^	float val[FML_SYMBOL_TABLE_MAX_NUM]; \/* value *\/$/;"	m	struct:rkFmlSymTbl
+val	rktype.h	/^	uint8_t val;$/;"	m	struct:dioparam
+vals	rktype.h	/^	float vals[2]; \/* Values *\/$/;"	m	struct:aiparam
+vals	rktype.h	/^	float vals[2]; \/* Values *\/$/;"	m	struct:edev
+workDir	rkxml.c	/^static char workDir[256];$/;"	v	file:

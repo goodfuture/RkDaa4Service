@@ -1,0 +1,37 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+DIO_DEVICE	dio.c	/^} DIO_DEVICE;$/;"	t	typeref:struct:_DIO_DEVICE_	file:
+DIO_IOC_DOHIGH	dio.h	14;"	d
+DIO_IOC_DOLOW	dio.h	15;"	d
+DIO_IOC_GETDO	dio.h	16;"	d
+DIO_IOC_MAGIC	dio.h	11;"	d
+DIO_MAJOR	dio.c	69;"	d	file:
+KERNELDIR	Makefile	/^	KERNELDIR ?= \/home\/bright\/linux-2.6.29.1$/;"	m
+PRINT_FUNC_NAME	dio.c	60;"	d	file:
+PRINT_FUNC_NAME	dio.c	65;"	d	file:
+PWD	Makefile	/^	PWD := $(shell pwd)$/;"	m
+_DIO_DEVICE_	dio.c	/^typedef struct _DIO_DEVICE_{$/;"	s	file:
+_DIO_H	dio.h	6;"	d
+cdev	dio.c	/^	struct cdev cdev;$/;"	m	struct:_DIO_DEVICE_	typeref:struct:_DIO_DEVICE_::cdev	file:
+dio_char_register	dio.c	/^static int dio_char_register(void)$/;"	f	file:
+dio_char_unregister	dio.c	/^static int dio_char_unregister(void)$/;"	f	file:
+dio_device	dio.c	/^static DIO_DEVICE dio_device;$/;"	v	file:
+dio_exit	dio.c	/^module_exit(dio_exit);$/;"	v
+dio_exit	dio.c	/^static void __exit dio_exit(void)$/;"	f	file:
+dio_fops	dio.c	/^static const struct file_operations dio_fops ={$/;"	v	typeref:struct:file_operations	file:
+dio_init	dio.c	/^module_init(dio_init);$/;"	v
+dio_init	dio.c	/^static int __init dio_init(void)$/;"	f	file:
+dio_ioctl	dio.c	/^static int dio_ioctl(struct inode *inode,struct file *filp,unsigned int cmd,unsigned long arg)$/;"	f	file:
+dio_open	dio.c	/^int dio_open(struct inode *inode,struct file *filp)$/;"	f
+dio_read	dio.c	/^static ssize_t dio_read(struct file *filp,char __user *buf,size_t size,loff_t *ppos)$/;"	f	file:
+dio_release	dio.c	/^static int dio_release(struct inode *inode,struct file *filp)$/;"	f	file:
+dio_write	dio.c	/^static ssize_t dio_write(struct file *file, const char __user *buf, size_t size, loff_t *ppos)$/;"	f	file:
+flush_led	dio.c	/^void flush_led(void)$/;"	f
+led_val	dio.c	/^static u32 led_val = 0;$/;"	v	file:
+obj-m	Makefile	/^	obj-m := dio.o$/;"	m
+sample_order	dio.c	/^static int sample_order = 1;		\/\/数字量的采集顺序，为0时是1.0，为1时是2.0$/;"	v	file:
+use_led	dio.c	/^static int use_led = 0;			\/\/是否使用led的模块参数，为0是不使用，1是使用$/;"	v	file:

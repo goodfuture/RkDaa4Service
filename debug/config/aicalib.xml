@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<calibrate>
+	<group id="CH0">
+		<parameter name="OFFSETL">20</parameter>
+		<parameter name="OFFSETH">100</parameter>
+	</group>
+</calibrate>

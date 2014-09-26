@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<uart>
+	<group id="COM0">
+		<parameter name="PROTO">libmodbus.so</parameter>
+		<parameter name="BAUD">9600</parameter>
+		<parameter name="DB">8</parameter>
+		<parameter name="SB">1</parameter>
+		<parameter name="PARITY">ODD</parameter>
+	</group>
+	<group id="CH0">
+		<parameter name="INUSE">EN</parameter>
+		<parameter name="CODE"></parameter>
+		<parameter name="COM">COM1</parameter>
+		<parameter name="DEVADDR"></parameter>
+		<parameter name="DA"></parameter>
+		<parameter name="DT">INT</parameter>
+		<parameter name="CONV">DIS</parameter>
+		<parameter name="USEFML">DIS</parameter>
+		<parameter name="FMLEXPR"></parameter>
+	</group>
+	<group id="CH1">
+		<parameter name="INUSE">DIS</parameter>
+		<parameter name="CODE"></parameter>
+		<parameter name="COM">COM1</parameter>
+		<parameter name="DEVADDR"></parameter>
+		<parameter name="DA"></parameter>
+		<parameter name="DT">INT</parameter>
+		<parameter name="CONV">DIS</parameter>
+		<parameter name="USEFML">DIS</parameter>
+		<parameter name="FMLEXPR"></parameter>
+	</group>
+</uart>

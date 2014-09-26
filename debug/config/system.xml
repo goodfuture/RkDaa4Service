@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<system>
+	<parameter name="SIM">1863618518</parameter>
+	<parameter name="MN">00000000000000</parameter>
+	<parameter name="ST">87</parameter>
+	<parameter name="PW">ihgf</parameter>
+	<parameter name="DSI">899</parameter>
+	<parameter name="DUM">DTU+ETH</parameter>
+	<parameter name="DUI">30</parameter>
+	<parameter name="RTDEN">DIS</parameter>
+	<parameter name="MINEN">DIS</parameter>
+	<parameter name="HOUREN">DIS</parameter>
+	<parameter name="DAILYEN">EN</parameter>
+	<parameter name="DISCRETEEN">EN</parameter>
+	<parameter name="ALARMEN">DIS</parameter>
+</system>

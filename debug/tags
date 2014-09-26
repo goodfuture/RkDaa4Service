@@ -1,0 +1,18 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARCH	Makefile	/^ARCH = arm$/;"	m
+CC	Makefile	/^CC = \/usr\/local\/arm\/4.3.3-rockontrol\/bin\/arm-linux-gcc$/;"	m
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -DDEBUG -I.\/include -I..\/include -I..\/depend\/include$/;"	m
+DEST	Makefile	/^DEST = ..\/bugtest $/;"	m
+LDFLAGS	Makefile	/^LDFLAGS = -L..\/depend\/lib -lpthread -lrt -ldl -lmxml -lm #-lm -lreadline -ltermcap $/;"	m
+OBJS	Makefile	/^OBJS = bugtest.o rkdam.o rkxml.o rkserial.o rkfml.o rkshm.o rkfifo.o$/;"	m
+main	src/bugtest.c	/^int main(void)$/;"	f
+main	src/dbtest.c	/^int main(int argc, char *argv)$/;"	f
+main	src/fmltest.c	/^int main(void)$/;"	f
+parseRead	src/fmltest.c	/^int parseRead(char *read)$/;"	f
+prompt	src/fmltest.c	/^const char *prompt = "请输入表达式: ";$/;"	v

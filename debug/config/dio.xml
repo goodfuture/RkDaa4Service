@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dio>
+	<group id="DI0">
+		<parameter name="INUSE">EN</parameter>
+		<parameter name="CODE">ry7</parameter>
+	</group>
+	<group id="DI1">
+		<parameter name="INUSE">DIS</parameter>
+		<parameter name="CODE" />
+	</group>
+	<group id="DI2">
+		<parameter name="INUSE">DIS</parameter>
+		<parameter name="CODE" />
+	</group>
+	<group id="DI3">
+		<parameter name="INUSE">DIS</parameter>
+		<parameter name="CODE" />
+	</group>
+	<group id="DI4">
+		<parameter name="INUSE">DIS</parameter>
+		<parameter name="CODE" />
+	</group>
+	<group id="DI5">
+		<parameter name="INUSE">DIS</parameter>
+		<parameter name="CODE" />
+	</group>
+	<group id="DI6">
+		<parameter name="INUSE">DIS</parameter>
+		<parameter name="CODE" />
+	</group>
+	<group id="DI7">
+		<parameter name="INUSE">DIS</parameter>
+		<parameter name="CODE" />
+	</group>
+	<group id="DO0">
+		<parameter name="INUSE">DIS</parameter>
+		<parameter name="CODE" />
+		<parameter name="STATE">DIS</parameter>
+	</group>
+	<group id="DO1">
+		<parameter name="INUSE">EN</parameter>
+		<parameter name="CODE">DO1</parameter>
+		<parameter name="STATE">EN</parameter>
+	</group>
+	<group id="DO2">
+		<parameter name="INUSE">EN</parameter>
+		<parameter name="CODE">DO2</parameter>
+		<parameter name="STATE">DIS</parameter>
+	</group>
+	<group id="DO3">
+		<parameter name="INUSE">DIS</parameter>
+		<parameter name="CODE" />
+		<parameter name="STATE">DIS</parameter>
+	</group>
+	<group id="DO4">
+		<parameter name="INUSE">DIS</parameter>
+		<parameter name="CODE" />
+		<parameter name="STATE">EN</parameter>
+	</group>
+	<group id="DO5">
+		<parameter name="INUSE">DIS</parameter>
+		<parameter name="CODE" />
+		<parameter name="STATE">DIS</parameter>
+	</group>
+	<group id="DO6">
+		<parameter name="INUSE">DIS</parameter>
+		<parameter name="CODE" />
+		<parameter name="STATE">DIS</parameter>
+	</group>
+	<group id="DO7">
+		<parameter name="INUSE">DIS</parameter>
+		<parameter name="CODE" />
+		<parameter name="STATE">DIS</parameter>
+	</group>
+</dio>

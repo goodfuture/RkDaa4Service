@@ -10,7 +10,7 @@ AI_CALIB_FILE	common/rkcom.h	18;"	d
 AI_CFG_FILE	common/rkcom.h	17;"	d
 AI_DEV_NAME_PREFIX	common/rkcom.h	22;"	d
 AI_NUM	common/rkcom.h	27;"	d
-AI_T	src/rktype.h	/^} AI_T;$/;"	t	typeref:enum:__anon12
+AI_T	src/rktype.h	/^} AI_T;$/;"	t	typeref:enum:__anon13
 ALARM_E	common/rkcom.h	/^	ALARM_E,$/;"	e	enum:__anon1
 ALARM_H	common/rkcom.h	/^	ALARM_H, \/* High *\/$/;"	e	enum:__anon1
 ALARM_L	common/rkcom.h	/^	ALARM_L, \/* Low *\/$/;"	e	enum:__anon1
@@ -27,14 +27,15 @@ ARCH	debug/ditest/Makefile	/^ARCH = arm$/;"	m
 ARCH	debug/dtmtest/Makefile	/^ARCH = x86$/;"	m
 ARCH	debug/hjttest/Makefile	/^ARCH = x86$/;"	m
 ARCH	debug/thread/Makefile	/^ARCH = x86$/;"	m
-ARCH	lib/Makefile	/^ARCH = arm$/;"	m
-ARG_CFG_DIR_OFFSET	src/rktype.h	245;"	d
-ARG_DYN_LIB_OFFSET	src/rktype.h	246;"	d
-ARG_MSG_DB_PATH_OFFSET	src/rktype.h	248;"	d
-ARG_RTD_DB_PATH_OFFSET	src/rktype.h	247;"	d
+ARCH	lib/modbus/Makefile	/^ARCH = arm$/;"	m
+ARCH	lib/smc/Makefile	/^ARCH = arm$/;"	m
+ARG_CFG_DIR_OFFSET	src/rktype.h	247;"	d
+ARG_DYN_LIB_OFFSET	src/rktype.h	248;"	d
+ARG_MSG_DB_PATH_OFFSET	src/rktype.h	250;"	d
+ARG_RTD_DB_PATH_OFFSET	src/rktype.h	249;"	d
 AllParam	src/rkprotocol.h	/^    AllParam,$/;"	e	enum:ParamType
 AnalogParam	src/rkprotocol.h	/^    AnalogParam,$/;"	e	enum:ParamType
-BOTH	src/rktype.h	/^	BOTH,$/;"	e	enum:__anon6
+BOTH	src/rktype.h	/^	BOTH,$/;"	e	enum:__anon7
 CC	Makefile	/^CC = $(TOOLDIR)\/3.4.3-rockontrol\/bin\/arm-linux-gcc$/;"	m
 CC	Makefile	/^CC = gcc$/;"	m
 CC	debug/aicalib/Makefile	/^CC = \/usr\/local\/arm\/4.3.3-rockontrol\/bin\/arm-linux-gcc$/;"	m
@@ -50,8 +51,10 @@ CC	debug/hjttest/Makefile	/^CC = gcc$/;"	m
 CC	debug/thread/Makefile	/^CC = \/usr\/local\/arm\/4.3.3-rockontrol\/bin\/arm-linux-gcc$/;"	m
 CC	debug/thread/Makefile	/^CC = gcc$/;"	m
 CC	drv/dio/test_dio/Makefile	/^CC = arm-linux-gcc$/;"	m
-CC	lib/Makefile	/^CC = \/usr\/local\/arm\/4.3.3-rockontrol\/bin\/arm-linux-gcc$/;"	m
-CC	lib/Makefile	/^CC = gcc$/;"	m
+CC	lib/modbus/Makefile	/^CC = \/usr\/local\/arm\/3.4.3-rockontrol\/bin\/arm-linux-gcc$/;"	m
+CC	lib/modbus/Makefile	/^CC = gcc$/;"	m
+CC	lib/smc/Makefile	/^CC = \/usr\/local\/arm\/3.4.3-rockontrol\/bin\/arm-linux-gcc$/;"	m
+CC	lib/smc/Makefile	/^CC = gcc$/;"	m
 CFLAGS	Makefile	/^CFLAGS = -I.\/depend\/include$/;"	m
 CFLAGS	debug/aicalib/Makefile	/^CFLAGS = -g -DDEBUG -I..\/..\/include -I..\/..\/depend\/include$/;"	m
 CFLAGS	debug/dbtest/Makefile	/^CFLAGS = -g -DDEBUG -I.\/include -I..\/include -I..\/depend\/include$/;"	m
@@ -59,10 +62,11 @@ CFLAGS	debug/ditest/Makefile	/^CFLAGS = -g -DDEBUG -I.\/include -I..\/include -I
 CFLAGS	debug/dtmtest/Makefile	/^CFLAGS = -g -I..\/..\/include$/;"	m
 CFLAGS	debug/hjttest/Makefile	/^CFLAGS = -g$/;"	m
 CFLAGS	debug/thread/Makefile	/^CFLAGS = -g$/;"	m
-CFLAGS	lib/Makefile	/^CFLAGS = -Wall -DDEBUG -I..\/include -I..\/depend\/include -I..\/common -c$/;"	m
-CLEAR_DTU_LINK_FLAG	src/rktype.h	78;"	d
-CLEAR_ETH_LINK_FLAG	src/rktype.h	76;"	d
-CM_T	src/rktype.h	/^} CM_T;$/;"	t	typeref:enum:__anon8
+CFLAGS	lib/modbus/Makefile	/^CFLAGS = -Wall -DDEBUG -I..\/..\/src -I..\/..\/depend\/include -I..\/..\/common -c$/;"	m
+CFLAGS	lib/smc/Makefile	/^CFLAGS = -Wall -DDEBUG -I..\/..\/src -I..\/..\/depend\/include -I..\/..\/common -c$/;"	m
+CLEAR_DTU_LINK_FLAG	src/rktype.h	80;"	d
+CLEAR_ETH_LINK_FLAG	src/rktype.h	78;"	d
+CM_T	src/rktype.h	/^} CM_T;$/;"	t	typeref:enum:__anon9
 COM_DEV_NAME_PREFIX	common/rkcom.h	23;"	d
 COM_NUM	common/rkcom.h	25;"	d
 CORE_PROG_EXIT_BIT_MASK	common/rkshm.h	87;"	d
@@ -101,16 +105,16 @@ CW_USER_LOGIN	src/rkprotocol.h	40;"	d
 ComParam	src/rkprotocol.h	/^    ComParam,$/;"	e	enum:ParamType
 DATA_SIZE	common/rkshm.h	20;"	d
 DAV_OFFSET	common/rkshm.h	51;"	d
-DAY_DATA_STAT_OFFSET	src/rktype.h	119;"	d
-DAY_STAT_DATA	src/rktype.h	/^	DAY_STAT_DATA, \/* Day *\/$/;"	e	enum:__anon10
-DBTABLE_T	src/rkdsm.h	/^} DBTABLE_T;$/;"	t	typeref:enum:__anon16
+DAY_DATA_STAT_OFFSET	src/rktype.h	121;"	d
+DAY_STAT_DATA	src/rktype.h	/^	DAY_STAT_DATA, \/* Day *\/$/;"	e	enum:__anon11
+DBTABLE_T	src/rkdsm.h	/^} DBTABLE_T;$/;"	t	typeref:enum:__anon17
 DEFAULT_INPUTRC	depend/include/readline/rlconf.h	39;"	d
 DEF_CFG_FILE_DIR	common/rkcom.h	8;"	d
 DEF_DYN_LIB_DIR	common/rkcom.h	11;"	d
 DEF_MNT_DIR	common/rkusb.h	4;"	d
 DEF_MSG_DB_PATH	common/rkcom.h	10;"	d
 DEF_RTD_DB_PATH	common/rkcom.h	9;"	d
-DEST	Makefile	/^DEST = \/home\/kangqi\/Debug\/shucaiyi_stable\/Core.bin$/;"	m
+DEST	Makefile	/^DEST = Core.bin$/;"	m
 DEST	debug/aicalib/Makefile	/^DEST = aicalib$/;"	m
 DEST	debug/dbtest/Makefile	/^DEST = sDebug$/;"	m
 DEST	debug/ditest/Makefile	/^DEST = sDebug$/;"	m
@@ -134,22 +138,22 @@ DOM_TBL_NAME	src/rkdsm.h	25;"	d
 DO_NUM	common/rkcom.h	29;"	d
 DTM_RECV_TIMEOUT_MS	src/rkdtm.h	8;"	d
 DTM_SEND_TIMEOUT_MS	src/rkdtm.h	7;"	d
-DTU	src/rktype.h	/^	DTU = 0,$/;"	e	enum:__anon6
+DTU	src/rktype.h	/^	DTU = 0,$/;"	e	enum:__anon7
 DTU_CFG_PROG_PATH	common/rkcom.h	4;"	d
-DTU_DEV_ID	src/rktype.h	23;"	d
+DTU_DEV_ID	src/rktype.h	25;"	d
 DTU_DEV_INTERFACE	common/rkcom.h	20;"	d
-DTU_LINK_STATUS_BITMASK	src/rktype.h	73;"	d
-DT_T	src/rktype.h	/^} DT_T;$/;"	t	typeref:enum:__anon9
-DUM_T	src/rktype.h	/^} DUM_T;$/;"	t	typeref:enum:__anon6
+DTU_LINK_STATUS_BITMASK	src/rktype.h	75;"	d
+DT_T	src/rktype.h	/^} DT_T;$/;"	t	typeref:enum:__anon10
+DUM_T	src/rktype.h	/^} DUM_T;$/;"	t	typeref:enum:__anon7
 DioParam	src/rkprotocol.h	/^    DioParam,$/;"	e	enum:ParamType
 DtuParam	src/rkprotocol.h	/^    DtuParam$/;"	e	enum:ParamType
 EI_NUM	common/rkcom.h	26;"	d
-EI_SAMPLE_INTERVAL_MS	src/rktype.h	21;"	d
+EI_SAMPLE_INTERVAL_MS	src/rktype.h	23;"	d
 ESC	depend/include/readline/chardefs.h	160;"	d
 ESC	depend/include/readline/chardefs.h	162;"	d
-ETH	src/rktype.h	/^	ETH,$/;"	e	enum:__anon6
-ETH_LINK_STATUS_BITMASK	src/rktype.h	72;"	d
-EVEN	src/rktype.h	/^	EVEN,$/;"	e	enum:__anon11
+ETH	src/rktype.h	/^	ETH,$/;"	e	enum:__anon7
+ETH_LINK_STATUS_BITMASK	src/rktype.h	74;"	d
+EVEN	src/rktype.h	/^	EVEN,$/;"	e	enum:__anon12
 EXE	drv/dio/test_dio/Makefile	/^EXE := test_dio$/;"	m
 FALSE	src/rkfml.h	11;"	d
 FIFO_OFFSET	common/rkshm.h	22;"	d
@@ -163,7 +167,7 @@ FIRMWARE_UPDATE_DTU_TOOL_TMP_FILE	src/rkprotocol.h	83;"	d
 FIRMWARE_UPDATE_HMI_FILE_PATH	src/rkprotocol.h	80;"	d
 FIRMWARE_UPDATE_HMI_TMP_FILE	src/rkprotocol.h	79;"	d
 FIRMWARE_UPDATE_TMP_DIR	src/rkprotocol.h	78;"	d
-FLT	src/rktype.h	/^	FLT,$/;"	e	enum:__anon9
+FLT	src/rktype.h	/^	FLT,$/;"	e	enum:__anon10
 FML_STACK_SIZE	src/rkfml.h	14;"	d
 FML_SYMBOL_TABLE_MAX_NUM	src/rkfml.h	31;"	d
 FML_VAR_PREFIX	src/rkfml.h	16;"	d
@@ -180,34 +184,33 @@ HEXVALUE	depend/include/readline/chardefs.h	123;"	d
 HISTENT_BYTES	depend/include/readline/history.h	53;"	d
 HISTORY_STATE	depend/include/readline/history.h	/^} HISTORY_STATE;$/;"	t	typeref:struct:_hist_state
 HIST_ENTRY	depend/include/readline/history.h	/^} HIST_ENTRY;$/;"	t	typeref:struct:_hist_entry
-HJTERRMN	src/rkhjt.h	/^	HJTERRMN,$/;"	e	enum:__anon15
-HJTERRMSG	src/rkhjt.h	/^	HJTERRMSG,$/;"	e	enum:__anon15
-HJTERRPW	src/rkhjt.h	/^	HJTERRPW,$/;"	e	enum:__anon15
-HJTEXECFAILED	src/rkhjt.h	/^	HJTEXECFAILED,$/;"	e	enum:__anon14
-HJTEXECNODATA	src/rkhjt.h	/^	HJTEXECNODATA,$/;"	e	enum:__anon14
-HJTEXECSUCCESS	src/rkhjt.h	/^	HJTEXECSUCCESS = 1,$/;"	e	enum:__anon14
-HJTNORMAL	src/rkhjt.h	/^	HJTNORMAL = 0,$/;"	e	enum:__anon15
-HJTREQERRORPW	src/rkhjt.h	/^	HJTREQERRORPW,$/;"	e	enum:__anon13
-HJTREQREADYEXEC	src/rkhjt.h	/^	HJTREQREADYEXEC = 1,$/;"	e	enum:__anon13
-HJTREQREJECT	src/rkhjt.h	/^	HJTREQREJECT,$/;"	e	enum:__anon13
+HJTERRMN	src/rkhjt.h	/^	HJTERRMN = 1,$/;"	e	enum:__anon16
+HJTERRMSG	src/rkhjt.h	/^	HJTERRMSG,$/;"	e	enum:__anon16
+HJTERRPW	src/rkhjt.h	/^	HJTERRPW,$/;"	e	enum:__anon16
+HJTEXECFAILED	src/rkhjt.h	/^	HJTEXECFAILED,$/;"	e	enum:__anon15
+HJTEXECNODATA	src/rkhjt.h	/^	HJTEXECNODATA,$/;"	e	enum:__anon15
+HJTEXECSUCCESS	src/rkhjt.h	/^	HJTEXECSUCCESS = 1,$/;"	e	enum:__anon15
+HJTREQERRORPW	src/rkhjt.h	/^	HJTREQERRORPW,$/;"	e	enum:__anon14
+HJTREQREADYEXEC	src/rkhjt.h	/^	HJTREQREADYEXEC = 1,$/;"	e	enum:__anon14
+HJTREQREJECT	src/rkhjt.h	/^	HJTREQREJECT,$/;"	e	enum:__anon14
 HJT_CMD_RECV_INTERVAL_MS	src/rkdtm.h	10;"	d
 HJT_CMD_RECV_TIMEOUT_MS	src/rkdtm.h	11;"	d
 HJT_DATA_ANSWER_BIT	src/rkhjt.h	11;"	d
 HJT_DATA_NUM_BIT	src/rkhjt.h	12;"	d
-HJT_ERR_T	src/rkhjt.h	/^} HJT_ERR_T;$/;"	t	typeref:enum:__anon15
+HJT_ERR_T	src/rkhjt.h	/^} HJT_ERR_T;$/;"	t	typeref:enum:__anon16
 HJT_MSG_HDR_LEN	src/rkhjt.h	8;"	d
 HJT_MSG_MAX_LEN	src/rkhjt.h	7;"	d
 HJT_MSG_SAFE_LEN	src/rkhjt.h	9;"	d
-HJT_RST_T	src/rkhjt.h	/^} HJT_RST_T;$/;"	t	typeref:enum:__anon14
-HJT_RTN_T	src/rkhjt.h	/^} HJT_RTN_T;$/;"	t	typeref:enum:__anon13
+HJT_RST_T	src/rkhjt.h	/^} HJT_RST_T;$/;"	t	typeref:enum:__anon15
+HJT_RTN_T	src/rkhjt.h	/^} HJT_RTN_T;$/;"	t	typeref:enum:__anon14
 HOM_TBL_NAME	src/rkdsm.h	24;"	d
-HOU_DATA_STAT_OFFSET	src/rktype.h	118;"	d
-HOU_STAT_DATA	src/rktype.h	/^	HOU_STAT_DATA, \/* Hour *\/$/;"	e	enum:__anon10
+HOU_DATA_STAT_OFFSET	src/rktype.h	120;"	d
+HOU_STAT_DATA	src/rktype.h	/^	HOU_STAT_DATA, \/* Hour *\/$/;"	e	enum:__anon11
 HS_STIFLED	depend/include/readline/history.h	65;"	d
-INT	src/rktype.h	/^	INT = 0,$/;"	e	enum:__anon9
+INT	src/rktype.h	/^	INT = 0,$/;"	e	enum:__anon10
 IN_CTYPE_DOMAIN	depend/include/readline/chardefs.h	70;"	d
 IN_CTYPE_DOMAIN	depend/include/readline/chardefs.h	72;"	d
-IO_SAMPLE_INTERVAL_MS	src/rktype.h	20;"	d
+IO_SAMPLE_INTERVAL_MS	src/rktype.h	22;"	d
 ISALNUM	depend/include/readline/chardefs.h	90;"	d
 ISALPHA	depend/include/readline/chardefs.h	91;"	d
 ISDIGIT	depend/include/readline/chardefs.h	92;"	d
@@ -220,13 +223,13 @@ ISPRINT	depend/include/readline/chardefs.h	86;"	d
 ISPRINT	depend/include/readline/chardefs.h	94;"	d
 ISUPPER	depend/include/readline/chardefs.h	95;"	d
 ISXDIGIT	depend/include/readline/chardefs.h	96;"	d
-IS_DTU_LINKED	src/rktype.h	82;"	d
-IS_DTU_LINK_ABNORMAL	src/rktype.h	83;"	d
-IS_ETH_LINKED	src/rktype.h	80;"	d
-IS_ETH_LINK_ABNORMAL	src/rktype.h	81;"	d
-IS_MSG_UPLOAD_BY_DTU	src/rktype.h	42;"	d
-IS_MSG_UPLOAD_BY_ETH	src/rktype.h	43;"	d
-IS_MSG_UPLOAD_BY_ETH_AND_DTU	src/rktype.h	44;"	d
+IS_DTU_LINKED	src/rktype.h	84;"	d
+IS_DTU_LINK_ABNORMAL	src/rktype.h	85;"	d
+IS_ETH_LINKED	src/rktype.h	82;"	d
+IS_ETH_LINK_ABNORMAL	src/rktype.h	83;"	d
+IS_MSG_UPLOAD_BY_DTU	src/rktype.h	44;"	d
+IS_MSG_UPLOAD_BY_ETH	src/rktype.h	45;"	d
+IS_MSG_UPLOAD_BY_ETH_AND_DTU	src/rktype.h	46;"	d
 KERNELDIR	drv/dio/driver/Makefile	/^	KERNELDIR ?= \/home\/bright\/linux-2.6.29.1$/;"	m
 KEYMAP_ENTRY	depend/include/readline/keymaps.h	/^} KEYMAP_ENTRY;$/;"	t	typeref:struct:_keymap_entry
 KEYMAP_ENTRY_ARRAY	depend/include/readline/keymaps.h	/^typedef KEYMAP_ENTRY KEYMAP_ENTRY_ARRAY[KEYMAP_SIZE];$/;"	t
@@ -239,42 +242,42 @@ LDFLAGS	debug/ditest/Makefile	/^LDFLAGS = -lpthread -lm -lrt -ldl -L..\/depend\/
 LDFLAGS	debug/dtmtest/Makefile	/^LDFLAGS = -lmxml -lpthread$/;"	m
 LDFLAGS	debug/hjttest/Makefile	/^LDFLAGS =$/;"	m
 LDFLAGS	debug/thread/Makefile	/^LDFLAGS =$/;"	m
-MA20	src/rktype.h	/^	MA20 = 0,$/;"	e	enum:__anon12
+MA20	src/rktype.h	/^	MA20 = 0,$/;"	e	enum:__anon13
 MAV_OFFSET	common/rkshm.h	52;"	d
-MAX_AOM_REC_NUM	src/rkdsm.h	38;"	d
-MAX_CMDLINE_ARG_NUM	src/rktype.h	257;"	d
-MAX_CODE_TBL_NUM	src/rktype.h	250;"	d
-MAX_DIM_REC_NUM	src/rkdsm.h	37;"	d
-MAX_DOM_REC_NUM	src/rkdsm.h	36;"	d
-MAX_HOM_REC_NUM	src/rkdsm.h	35;"	d
+MAX_AOM_REC_NUM	src/rkdsm.h	36;"	d
+MAX_CMDLINE_ARG_NUM	src/rktype.h	259;"	d
+MAX_CODE_TBL_NUM	src/rktype.h	252;"	d
+MAX_DIM_REC_NUM	src/rkdsm.h	35;"	d
+MAX_DOM_REC_NUM	src/rkdsm.h	34;"	d
+MAX_HOM_REC_NUM	src/rkdsm.h	33;"	d
 MAX_LIB_NUM	src/rkscan.h	6;"	d
-MAX_MOM_REC_NUM	src/rkdsm.h	34;"	d
-MAX_RI_REC_NUM	src/rkdsm.h	31;"	d
-MAX_RTD_REC_NUM	src/rkdsm.h	32;"	d
-MAX_RTM_REC_NUM	src/rkdsm.h	33;"	d
-MB_ADU_MAX_LEN	lib/rkmodbus.h	7;"	d
-MB_ERROR	lib/rkmodbus.h	/^	MB_ERROR,$/;"	e	enum:__anon4
-MB_FINISH	lib/rkmodbus.h	/^	MB_FINISH,$/;"	e	enum:__anon4
-MB_PROCESS	lib/rkmodbus.h	/^	MB_PROCESS,$/;"	e	enum:__anon4
-MB_RECEIVE	lib/rkmodbus.h	/^	MB_RECEIVE,$/;"	e	enum:__anon4
-MB_REQUEST	lib/rkmodbus.h	/^	MB_REQUEST = 0,$/;"	e	enum:__anon4
-MB_STEP_T	lib/rkmodbus.h	/^} MB_STEP_T;$/;"	t	typeref:enum:__anon4
-MB_TIME_OUT_MS	lib/rkmodbus.h	6;"	d
+MAX_MOM_REC_NUM	src/rkdsm.h	32;"	d
+MAX_RI_REC_NUM	src/rkdsm.h	29;"	d
+MAX_RTD_REC_NUM	src/rkdsm.h	30;"	d
+MAX_RTM_REC_NUM	src/rkdsm.h	31;"	d
+MB_ADU_MAX_LEN	lib/modbus/src/rkmodbus.h	7;"	d
+MB_ERROR	lib/modbus/src/rkmodbus.h	/^	MB_ERROR,$/;"	e	enum:__anon4
+MB_FINISH	lib/modbus/src/rkmodbus.h	/^	MB_FINISH,$/;"	e	enum:__anon4
+MB_PROCESS	lib/modbus/src/rkmodbus.h	/^	MB_PROCESS,$/;"	e	enum:__anon4
+MB_RECEIVE	lib/modbus/src/rkmodbus.h	/^	MB_RECEIVE,$/;"	e	enum:__anon4
+MB_REQUEST	lib/modbus/src/rkmodbus.h	/^	MB_REQUEST = 0,$/;"	e	enum:__anon4
+MB_STEP_T	lib/modbus/src/rkmodbus.h	/^} MB_STEP_T;$/;"	t	typeref:enum:__anon4
+MB_TIME_OUT_MS	lib/modbus/src/rkmodbus.h	6;"	d
 META	depend/include/readline/chardefs.h	64;"	d
 META_CHAR	depend/include/readline/chardefs.h	61;"	d
-MNT_DATA_STAT_OFFSET	src/rktype.h	117;"	d
-MNT_STAT_DATA	src/rktype.h	/^	MNT_STAT_DATA = 0, \/* Minute *\/$/;"	e	enum:__anon10
+MNT_DATA_STAT_OFFSET	src/rktype.h	119;"	d
+MNT_STAT_DATA	src/rktype.h	/^	MNT_STAT_DATA = 0, \/* Minute *\/$/;"	e	enum:__anon11
 MOM_TBL_NAME	src/rkdsm.h	23;"	d
-MON_DATA_STAT_OFFSET	src/rktype.h	120;"	d
-MON_STAT_DATA	src/rktype.h	/^	MON_STAT_DATA, \/* Month *\/$/;"	e	enum:__anon10
-MSGTYPEAOM	src/rktype.h	/^	MSGTYPEAOM,		\/* Alarm Of Message *\/$/;"	e	enum:__anon7
-MSGTYPEDIM	src/rktype.h	/^	MSGTYPEDIM,		\/* Digital Input Message *\/$/;"	e	enum:__anon7
-MSGTYPEDOM	src/rktype.h	/^	MSGTYPEDOM,		\/* Day Of Message *\/$/;"	e	enum:__anon7
-MSGTYPEHOM	src/rktype.h	/^	MSGTYPEHOM,		\/* Hour Of Message *\/$/;"	e	enum:__anon7
-MSGTYPEMOM	src/rktype.h	/^	MSGTYPEMOM,		\/* Minute Of Message *\/$/;"	e	enum:__anon7
-MSGTYPERTM	src/rktype.h	/^	MSGTYPERTM = 0, \/* Real-Time Message *\/$/;"	e	enum:__anon7
+MON_DATA_STAT_OFFSET	src/rktype.h	122;"	d
+MON_STAT_DATA	src/rktype.h	/^	MON_STAT_DATA, \/* Month *\/$/;"	e	enum:__anon11
+MSGTYPEAOM	src/rktype.h	/^	MSGTYPEAOM,		\/* Alarm Of Message *\/$/;"	e	enum:__anon8
+MSGTYPEDIM	src/rktype.h	/^	MSGTYPEDIM,		\/* Digital Input Message *\/$/;"	e	enum:__anon8
+MSGTYPEDOM	src/rktype.h	/^	MSGTYPEDOM,		\/* Day Of Message *\/$/;"	e	enum:__anon8
+MSGTYPEHOM	src/rktype.h	/^	MSGTYPEHOM,		\/* Hour Of Message *\/$/;"	e	enum:__anon8
+MSGTYPEMOM	src/rktype.h	/^	MSGTYPEMOM,		\/* Minute Of Message *\/$/;"	e	enum:__anon8
+MSGTYPERTM	src/rktype.h	/^	MSGTYPERTM = 0, \/* Real-Time Message *\/$/;"	e	enum:__anon8
 MSG_QURY	common/rkshm.h	/^	MSG_QURY = 0,$/;"	e	enum:__anon3
-MSG_TYPE_T	src/rktype.h	/^} MSG_TYPE_T;$/;"	t	typeref:enum:__anon7
+MSG_TYPE_T	src/rktype.h	/^} MSG_TYPE_T;$/;"	t	typeref:enum:__anon8
 MULT_MATCH	depend/include/readline/readline.h	811;"	d
 MXML_ADD_AFTER	depend/include/mxml.h	64;"	d
 MXML_ADD_BEFORE	depend/include/mxml.h	63;"	d
@@ -309,7 +312,7 @@ MXML_WS_BEFORE_CLOSE	depend/include/mxml.h	60;"	d
 MXML_WS_BEFORE_OPEN	depend/include/mxml.h	58;"	d
 NET_CFG_FILE	common/rkcom.h	14;"	d
 NEWLINE	depend/include/readline/chardefs.h	129;"	d
-NONE	src/rktype.h	/^	NONE = 0,$/;"	e	enum:__anon11
+NONE	src/rktype.h	/^	NONE = 0,$/;"	e	enum:__anon12
 NON_NEGATIVE	depend/include/readline/chardefs.h	80;"	d
 NON_NEGATIVE	depend/include/readline/chardefs.h	82;"	d
 NO_MATCH	depend/include/readline/readline.h	809;"	d
@@ -322,9 +325,10 @@ OBJS	debug/dtmtest/Makefile	/^OBJS = main.o rkhjt.o rkcrc.o rkxml.o$/;"	m
 OBJS	debug/hjttest/Makefile	/^OBJS = main.o$/;"	m
 OBJS	debug/thread/Makefile	/^OBJS = main.o$/;"	m
 OBJS	drv/dio/test_dio/Makefile	/^OBJS := $(patsubst %.c, %.o, $(SRCS))$/;"	m
-OBJS	lib/Makefile	/^OBJS = rkmodbus.o rkcrc.o rkser.o$/;"	m
+OBJS	lib/modbus/Makefile	/^OBJS = rkmodbus.o rkcrc.o rkser.o$/;"	m
+OBJS	lib/smc/Makefile	/^OBJS = rksmc.o rkser.o$/;"	m
 OCTVALUE	depend/include/readline/chardefs.h	121;"	d
-ODD	src/rktype.h	/^	ODD,$/;"	e	enum:__anon11
+ODD	src/rktype.h	/^	ODD,$/;"	e	enum:__anon12
 OFF	src/rktype.h	17;"	d
 ON	src/rktype.h	13;"	d
 OPTR_TABLE_SIZE	src/rkfml.c	20;"	d	file:
@@ -334,7 +338,7 @@ PARAMS	depend/include/readline/rlstdc.h	33;"	d
 PARAMS	depend/include/readline/rlstdc.h	35;"	d
 PARAMS	depend/include/readline/tilde.h	36;"	d
 PARAMS	depend/include/readline/tilde.h	38;"	d
-PARITY_T	src/rktype.h	/^} PARITY_T;$/;"	t	typeref:enum:__anon11
+PARITY_T	src/rktype.h	/^} PARITY_T;$/;"	t	typeref:enum:__anon12
 PREFIX_META_HACK	depend/include/readline/rlconf.h	36;"	d
 PRINT_FUNC_NAME	drv/dio/driver/dio.c	60;"	d	file:
 PRINT_FUNC_NAME	drv/dio/driver/dio.c	65;"	d	file:
@@ -346,12 +350,12 @@ READLINE_CALLBACKS	depend/include/readline/rlconf.h	56;"	d
 RELOAD_USR_CFG_BIT_MASK	common/rkshm.h	85;"	d
 RETURN	depend/include/readline/chardefs.h	133;"	d
 RI_TBL_NAME	src/rkdsm.h	21;"	d
-RKDOMTABLE	src/rkdsm.h	/^	RKDOMTABLE,$/;"	e	enum:__anon16
-RKHOMTABLE	src/rkdsm.h	/^	RKHOMTABLE,$/;"	e	enum:__anon16
-RKMOMTABLE	src/rkdsm.h	/^	RKMOMTABLE,$/;"	e	enum:__anon16
+RKDOMTABLE	src/rkdsm.h	/^	RKDOMTABLE,$/;"	e	enum:__anon17
+RKHOMTABLE	src/rkdsm.h	/^	RKHOMTABLE,$/;"	e	enum:__anon17
+RKMOMTABLE	src/rkdsm.h	/^	RKMOMTABLE,$/;"	e	enum:__anon17
 RKPROTOCOL_H	src/rkprotocol.h	2;"	d
-RKRTDTABLE	src/rkdsm.h	/^	RKRTDTABLE = 0,$/;"	e	enum:__anon16
-RKRTMTABLE	src/rkdsm.h	/^	RKRTMTABLE,$/;"	e	enum:__anon16
+RKRTDTABLE	src/rkdsm.h	/^	RKRTDTABLE = 0,$/;"	e	enum:__anon17
+RKRTMTABLE	src/rkdsm.h	/^	RKRTMTABLE,$/;"	e	enum:__anon17
 RKSERVER	src/rkserver.h	2;"	d
 RK_FTP_HEADER_FLAG_SEG_LEN	src/rkprotocol.h	34;"	d
 RK_FTP_HEADER_FLAG_SEG_OFFSET	src/rkprotocol.h	33;"	d
@@ -403,22 +407,27 @@ RL_STATE_VIMOTION	depend/include/readline/readline.h	836;"	d
 RL_UNSETSTATE	depend/include/readline/readline.h	844;"	d
 RL_VERSION_MAJOR	depend/include/readline/readline.h	43;"	d
 RL_VERSION_MINOR	depend/include/readline/readline.h	44;"	d
-RTD_CONV_VAL_OFFSET	src/rktype.h	115;"	d
-RTD_RAW_VAL_OFFSET	src/rktype.h	114;"	d
+RTD_CONV_VAL_OFFSET	src/rktype.h	117;"	d
+RTD_RAW_VAL_OFFSET	src/rktype.h	116;"	d
 RTD_TBL_NAME	src/rkdsm.h	20;"	d
 RTM_TBL_NAME	src/rkdsm.h	22;"	d
 RTV_OFFSET	common/rkshm.h	48;"	d
 RUBOUT	depend/include/readline/chardefs.h	137;"	d
-RUNTIME_INFO_UPDATE_INTERVAL_S	src/rkdsm.h	29;"	d
 SCalib	common/rkcalib.h	/^struct SCalib {$/;"	s
 SER_CFG_FILE	common/rkcom.h	15;"	d
 SER_QURY	common/rkshm.h	/^	SER_QURY,$/;"	e	enum:__anon3
-SET_DTU_LINK_FLAG	src/rktype.h	77;"	d
-SET_ETH_LINK_FLAG	src/rktype.h	75;"	d
+SET_DTU_LINK_FLAG	src/rktype.h	79;"	d
+SET_ETH_LINK_FLAG	src/rktype.h	77;"	d
 SHM_DEV_FILE	common/rkshm.h	25;"	d
 SHM_SIZE	common/rkshm.h	23;"	d
 SHM_TYPE	common/rkshm.h	/^} SHM_TYPE;$/;"	t	typeref:enum:__anon2
 SINGLE_MATCH	depend/include/readline/readline.h	810;"	d
+SMC_ERROR	lib/smc/src/rksmc.h	/^	SMC_ERROR,$/;"	e	enum:__anon5
+SMC_FINISH	lib/smc/src/rksmc.h	/^	SMC_FINISH,$/;"	e	enum:__anon5
+SMC_RECEIVE	lib/smc/src/rksmc.h	/^	SMC_RECEIVE,$/;"	e	enum:__anon5
+SMC_REQUEST	lib/smc/src/rksmc.h	/^	SMC_REQUEST = 0,$/;"	e	enum:__anon5
+SMC_STEP_T	lib/smc/src/rksmc.h	/^} SMC_STEP_T;$/;"	t	typeref:enum:__anon5
+SMC_TIME_OUT_MS	lib/smc/src/rksmc.h	6;"	d
 SPACE	depend/include/readline/chardefs.h	155;"	d
 SPACE	depend/include/readline/chardefs.h	157;"	d
 SQLITE3_TEXT	depend/include/sqlite3.h	3671;"	d
@@ -726,19 +735,20 @@ SQLITE_VERSION_NUMBER	depend/include/sqlite3.h	80;"	d
 SQLITE_VTAB_CONSTRAINT_SUPPORT	depend/include/sqlite3.h	7140;"	d
 SQLITE_WARNING	depend/include/sqlite3.h	429;"	d
 SRCS	drv/dio/test_dio/Makefile	/^SRCS := $(wildcard *.c)$/;"	m
-STACKOPND	src/rkfml.h	/^	STACKOPND,	\/* operand stack *\/$/;"	e	enum:__anon5
-STACKOPTR	src/rkfml.h	/^	STACKOPTR = 0, \/* operator stack *\/$/;"	e	enum:__anon5
-STACK_TYPE_T	src/rkfml.h	/^} STACK_TYPE_T;$/;"	t	typeref:enum:__anon5
-STAT_DATA_TYPE	src/rktype.h	/^} STAT_DATA_TYPE;$/;"	t	typeref:enum:__anon10
+STACKOPND	src/rkfml.h	/^	STACKOPND,	\/* operand stack *\/$/;"	e	enum:__anon6
+STACKOPTR	src/rkfml.h	/^	STACKOPTR = 0, \/* operator stack *\/$/;"	e	enum:__anon6
+STACK_TYPE_T	src/rkfml.h	/^} STACK_TYPE_T;$/;"	t	typeref:enum:__anon6
+STAT_DATA_TYPE	src/rktype.h	/^} STAT_DATA_TYPE;$/;"	t	typeref:enum:__anon11
 SYS_CFG_FILE	common/rkcom.h	13;"	d
 SYS_INPUTRC	depend/include/readline/rlconf.h	42;"	d
 SerialParam	src/rkprotocol.h	/^    SerialParam,$/;"	e	enum:ParamType
 SystemParam	src/rkprotocol.h	/^    SystemParam,$/;"	e	enum:ParamType
 TAB	depend/include/readline/chardefs.h	141;"	d
-TARGET	lib/Makefile	/^TARGET = libmodbus.so$/;"	m
+TARGET	lib/modbus/Makefile	/^TARGET = libmodbus.so$/;"	m
+TARGET	lib/smc/Makefile	/^TARGET = libsmc.so$/;"	m
 TAV_OFFSET	common/rkshm.h	49;"	d
-TCPCLIENT	src/rktype.h	/^	TCPCLIENT,$/;"	e	enum:__anon8
-TCPSERVER	src/rktype.h	/^	TCPSERVER,$/;"	e	enum:__anon8
+TCPCLIENT	src/rktype.h	/^	TCPCLIENT,$/;"	e	enum:__anon9
+TCPSERVER	src/rktype.h	/^	TCPSERVER,$/;"	e	enum:__anon9
 THREAD_NUM	debug/thread/main.c	11;"	d	file:
 TLV_LEN_SEG_LEN	src/rkprotocol.h	70;"	d
 TLV_LEN_SEG_OFFSET	src/rkprotocol.h	69;"	d
@@ -797,8 +807,8 @@ TYPE_AI	common/rkshm.h	/^	TYPE_AI,$/;"	e	enum:__anon2
 TYPE_DI	common/rkshm.h	/^	TYPE_DI,$/;"	e	enum:__anon2
 TYPE_DO	common/rkshm.h	/^	TYPE_DO,$/;"	e	enum:__anon2
 TYPE_EI	common/rkshm.h	/^	TYPE_EI,$/;"	e	enum:__anon2
-UDPCLIENT	src/rktype.h	/^	UDPCLIENT = 0,$/;"	e	enum:__anon8
-UDPSERVER	src/rktype.h	/^	UDPSERVER,$/;"	e	enum:__anon8
+UDPCLIENT	src/rktype.h	/^	UDPCLIENT = 0,$/;"	e	enum:__anon9
+UDPSERVER	src/rktype.h	/^	UDPSERVER,$/;"	e	enum:__anon9
 UI_CMD_CORE_PROG_EXIT	common/rkcom.h	42;"	d
 UI_CMD_DISABLE_DTU	common/rkcom.h	40;"	d
 UI_CMD_ENABLE_DTU	common/rkcom.h	41;"	d
@@ -813,8 +823,8 @@ UNDO_INSERT	depend/include/readline/readline.h	/^enum undo_code { UNDO_DELETE, U
 UNDO_LIST	depend/include/readline/readline.h	/^} UNDO_LIST;$/;"	t	typeref:struct:undo_list
 UNMETA	depend/include/readline/chardefs.h	66;"	d
 USB_DEV_CHECK	common/rkusb.h	9;"	d
-V10	src/rktype.h	/^	V10,$/;"	e	enum:__anon12
-V5	src/rktype.h	/^	V5,$/;"	e	enum:__anon12
+V10	src/rktype.h	/^	V10,$/;"	e	enum:__anon13
+V5	src/rktype.h	/^	V5,$/;"	e	enum:__anon13
 VFunction	depend/include/readline/rltypedefs.h	/^typedef void VFunction ();$/;"	t
 VISIBLE_STATS	depend/include/readline/rlconf.h	29;"	d
 VI_MODE	depend/include/readline/rlconf.h	26;"	d
@@ -853,10 +863,11 @@ _RK_FORMULA_H_	src/rkfml.h	2;"	d
 _RK_HJT_H_	src/rkhjt.h	2;"	d
 _RK_HMI_H_	src/rkhmi.h	2;"	d
 _RK_INIT_H_	src/rkinit.h	2;"	d
-_RK_MODBUS_H_	lib/rkmodbus.h	2;"	d
+_RK_MODBUS_H_	lib/modbus/src/rkmodbus.h	2;"	d
 _RK_SCAN_LIB_H_	src/rkscan.h	2;"	d
 _RK_SERIAL_H_	src/rkser.h	2;"	d
 _RK_SHARE_MEM_H_	common/rkshm.h	14;"	d
+_RK_SMC_H_	lib/smc/src/rksmc.h	2;"	d
 _RK_TYPE_H_	src/rktype.h	2;"	d
 _RK_USB_DISK_H_	common/rkusb.h	2;"	d
 _RK_XML_PARSE_H_	src/rkxml.h	2;"	d
@@ -886,7 +897,7 @@ aConstraint	depend/include/sqlite3.h	/^  } *aConstraint;            \/* Table of
 aConstraintUsage	depend/include/sqlite3.h	/^  } *aConstraintUsage;$/;"	m	struct:sqlite3_index_info	typeref:struct:sqlite3_index_info::sqlite3_index_constraint_usage
 aOrderBy	depend/include/sqlite3.h	/^  } *aOrderBy;               \/* The ORDER BY clause *\/$/;"	m	struct:sqlite3_index_info	typeref:struct:sqlite3_index_info::sqlite3_index_orderby
 aParam	depend/include/sqlite3.h	/^  double *aParam;                 \/* Parameters passed to SQL geom function *\/$/;"	m	struct:sqlite3_rtree_geometry
-addr	lib/rkmodbus.h	/^	uint8_t addr;$/;"	m	struct:mbRtuReqMsg
+addr	lib/modbus/src/rkmodbus.h	/^	uint8_t addr;$/;"	m	struct:mbRtuReqMsg
 aggregate_context	depend/include/sqlite3ext.h	/^  void * (*aggregate_context)(sqlite3_context*,int nBytes);$/;"	m	struct:sqlite3_api_routines
 aggregate_count	depend/include/sqlite3ext.h	/^  int  (*aggregate_count)(sqlite3_context*);$/;"	m	struct:sqlite3_api_routines
 ai	common/rkshm.h	/^	rtdInfo_t	ai[AI_NUM];$/;"	m	struct:shmMap
@@ -949,7 +960,7 @@ close	depend/include/sqlite3ext.h	/^  int  (*close)(sqlite3*);$/;"	m	struct:sqli
 close_v2	depend/include/sqlite3ext.h	/^  int (*close_v2)(sqlite3*);$/;"	m	struct:sqlite3_api_routines
 cm	src/rktype.h	/^	CM_T cm; \/* Communication Mode *\/$/;"	m	struct:net
 cmd	common/rkshm.h	/^	uint8_t cmd[64];$/;"	m	struct:queryCond
-cn	src/rkhjt.h	/^	uint16_t cn; \/* Command Number *\/$/;"	m	struct:hjtMsg
+cn	src/rkhjt.h	/^	uint16_t cn; \/* Command Number *\/$/;"	m	struct:hjtPkt
 cn	src/rkhjt.h	/^	uint16_t cn;$/;"	m	struct:hjtCnMap
 cnt	src/rktype.h	/^	long cnt[4];$/;"	m	struct:statinfo
 code	common/rkshm.h	/^	char code[8];$/;"	m	struct:dioInfo
@@ -1001,8 +1012,8 @@ control_character_bit	depend/include/readline/chardefs.h	56;"	d
 control_character_mask	depend/include/readline/chardefs.h	54;"	d
 control_character_threshold	depend/include/readline/chardefs.h	53;"	d
 cou	src/rktype.h	/^	double cou[4];$/;"	m	struct:statinfo
-cp	src/rkhjt.h	/^	char cp[1024]; \/* Command Parameter *\/$/;"	m	struct:hjtMsg
-crc	lib/rkmodbus.h	/^	uint16_t crc;$/;"	m	struct:mbRtuReqMsg
+cp	src/rkhjt.h	/^	char cp[1024]; \/* Command Parameter *\/$/;"	m	struct:hjtPkt
+crc	lib/modbus/src/rkmodbus.h	/^	uint16_t crc;$/;"	m	struct:mbRtuReqMsg
 create_collation	depend/include/sqlite3ext.h	/^  int  (*create_collation)(sqlite3*,const char*,int,void*,$/;"	m	struct:sqlite3_api_routines
 create_collation16	depend/include/sqlite3ext.h	/^  int  (*create_collation16)(sqlite3*,const void*,int,void*,$/;"	m	struct:sqlite3_api_routines
 create_collation_v2	depend/include/sqlite3ext.h	/^  int (*create_collation_v2)(sqlite3*,const char*,int,void*,$/;"	m	struct:sqlite3_api_routines
@@ -1012,15 +1023,14 @@ create_function_v2	depend/include/sqlite3ext.h	/^  int (*create_function_v2)(sql
 create_module	depend/include/sqlite3ext.h	/^  int (*create_module)(sqlite3*,const char*,const sqlite3_module*,void*);$/;"	m	struct:sqlite3_api_routines
 create_module_v2	depend/include/sqlite3ext.h	/^  int (*create_module_v2)(sqlite3*,const char*,const sqlite3_module*,void*,$/;"	m	struct:sqlite3_api_routines
 ctx	src/main.c	/^struct context ctx;$/;"	v	typeref:struct:context
-ctx	src/rkhjt.c	/^static struct context *ctx;$/;"	v	typeref:struct:context	file:
 cur_node	depend/include/mxml.h	/^  int			cur_node;	\/* Current node *\/$/;"	m	struct:mxml_index_s
 custom	depend/include/mxml.h	/^  mxml_custom_t		custom;		\/* Custom data @since Mini-XML 2.1@ *\/$/;"	m	union:mxml_value_u
 cw	src/rkprotocol.h	/^	uint8_t		cw;$/;"	m	struct:rkMsgPkt
-da	src/rktype.h	/^	int da; \/* Device Address *\/$/;"	m	struct:edev
 data	depend/include/mxml.h	/^  void			*data;		\/* Pointer to (allocated) custom data *\/$/;"	m	struct:mxml_custom_s
 data	depend/include/readline/history.h	/^  histdata_t data;$/;"	m	struct:_hist_entry
 dataReq	common/rkshm.h	/^	queryReq_t	dataReq;$/;"	m	struct:shmMap
 data_count	depend/include/sqlite3ext.h	/^  int  (*data_count)(sqlite3_stmt*pStmt);$/;"	m	struct:sqlite3_api_routines
+datatype	src/rktype.h	/^	DT_T datatype; \/* Data Type *\/$/;"	m	struct:edev
 db	src/rktype.h	/^	uint8_t db; \/* Data Bits *\/$/;"	m	struct:com
 db_config	depend/include/sqlite3ext.h	/^  int (*db_config)(sqlite3*,int,...);$/;"	m	struct:sqlite3_api_routines
 db_filename	depend/include/sqlite3ext.h	/^  const char *(*db_filename)(sqlite3*,const char*);$/;"	m	struct:sqlite3_api_routines
@@ -1034,6 +1044,7 @@ debug	src/rktype.h	/^	uint8_t			debug; \/* Debug Flag *\/$/;"	m	struct:context
 declare_vtab	depend/include/sqlite3ext.h	/^  int (*declare_vtab)(sqlite3*,const char*);$/;"	m	struct:sqlite3_api_routines
 desc	depend/include/sqlite3.h	/^     unsigned char desc;       \/* True for DESC.  False for ASC. *\/$/;"	m	struct:sqlite3_index_info::sqlite3_index_orderby
 destroy	depend/include/mxml.h	/^  mxml_custom_destroy_cb_t destroy;	\/* Pointer to destructor function *\/$/;"	m	struct:mxml_custom_s
+devid	src/rktype.h	/^	int devid; \/* Device Address *\/$/;"	m	struct:edev
 devnode	common/rkusb.h	/^	char devnode[128];$/;"	m	struct:usbdisk
 dio	src/rktype.h	/^typedef struct dio {$/;"	s
 dioInfo	common/rkshm.h	/^typedef struct dioInfo {$/;"	s
@@ -1061,8 +1072,7 @@ dop	common/rkshm.h	/^	dioInfo_t	dop[DO_NUM];$/;"	m	struct:shmMap
 double	depend/include/sqlite3.h	264;"	d
 double	depend/include/sqlite3.h	7178;"	d
 dsi	src/rktype.h	/^	uint16_t	dsi; \/* Data Save Interval(sec) *\/$/;"	m	struct:sys
-dt	src/rktype.h	/^	DT_T dt; \/* Data Type *\/$/;"	m	struct:edev
-dtmcfi	src/rkdtm.c	/^} dtmcfi;$/;"	v	typeref:struct:__anon17	file:
+dtmcfi	src/rkdtm.c	/^} dtmcfi;$/;"	v	typeref:struct:__anon18	file:
 dtmcom	src/rkdtm.c	/^static struct com dtmcom;$/;"	v	typeref:struct:com	file:
 dtmnet	src/rkdtm.c	/^static struct net *dtmnet;$/;"	v	typeref:struct:net	file:
 dui	src/rktype.h	/^	uint16_t	dui; \/* Data Upload Interval(sec) *\/$/;"	m	struct:sys
@@ -1098,7 +1108,7 @@ file_control	depend/include/sqlite3ext.h	/^  int (*file_control)(sqlite3*,const 
 finalize	depend/include/sqlite3ext.h	/^  int  (*finalize)(sqlite3_stmt*pStmt);$/;"	m	struct:sqlite3_api_routines
 flag	common/rkshm.h	/^	volatile uint8_t		flag;$/;"	m	struct:shmMap
 flag	src/rkhjt.h	/^	int flag; \/* if flag is 1, we need answer *\/$/;"	m	struct:hjtCnMap
-flag	src/rkhjt.h	/^	uint8_t flag; $/;"	m	struct:hjtMsg
+flag	src/rkhjt.h	/^	uint8_t flag; $/;"	m	struct:hjtPkt
 flag	src/rkprotocol.h	/^	uint8_t		flag;$/;"	m	struct:rkFtpMsgPkt
 flag	src/rktype.h	/^	uint8_t flag; \/* Data Acquisition Wether Normal Or Not *\/$/;"	m	struct:aiparam
 flag	src/rktype.h	/^	uint8_t flag; \/* When Data Acquisition Successful This Flag Been Set To 'N', Otherwise 'D' *\/$/;"	m	struct:edev
@@ -1110,10 +1120,11 @@ fpath	src/rkscan.h	/^	char *fpath[MAX_LIB_NUM]; \/* Path *\/$/;"	m	struct:libMap
 free	depend/include/sqlite3ext.h	/^  void  (*free)(void*);$/;"	m	struct:sqlite3_api_routines
 free_table	depend/include/sqlite3ext.h	/^  void  (*free_table)(char**result);$/;"	m	struct:sqlite3_api_routines
 func	debug/thread/main.c	/^void func(void)$/;"	f
-func	lib/rkmodbus.h	/^	uint8_t func;$/;"	m	struct:mbRtuReqMsg
-func	src/rkhjt.h	/^	int (* func)(struct hjtMsg *msg, char **rsp, void *arg);$/;"	m	struct:hjtCnMap
+func	lib/modbus/src/rkmodbus.h	/^	uint8_t func;$/;"	m	struct:mbRtuReqMsg
+func	src/rkhjt.h	/^	int (* func)(struct hjtPkt *pkt, char *msg, void *arg);$/;"	m	struct:hjtCnMap
 function	depend/include/readline/keymaps.h	/^  rl_command_func_t *function;$/;"	m	struct:_keymap_entry
 function	depend/include/readline/readline.h	/^  rl_command_func_t *function;$/;"	m	struct:_funmap
+g_ctx	src/rkhjt.c	/^static struct context *g_ctx;$/;"	v	typeref:struct:context	file:
 get_autocommit	depend/include/sqlite3ext.h	/^  int  (*get_autocommit)(sqlite3*);$/;"	m	struct:sqlite3_api_routines
 get_auxdata	depend/include/sqlite3ext.h	/^  void * (*get_auxdata)(sqlite3_context*,int);$/;"	m	struct:sqlite3_api_routines
 get_table	depend/include/sqlite3ext.h	/^  int  (*get_table)(sqlite3*,const char*,char***,int*,int*,char**);$/;"	m	struct:sqlite3_api_routines
@@ -1129,8 +1140,8 @@ histdata_t	depend/include/readline/history.h	/^typedef void *histdata_t;$/;"	t
 hjtCnMap	src/rkhjt.h	/^typedef struct hjtCnMap {$/;"	s
 hjtCnMap_t	src/rkhjt.h	/^} hjtCnMap_t;$/;"	t	typeref:struct:hjtCnMap
 hjtCnTbl	src/rkhjt.c	/^const struct hjtCnMap hjtCnTbl[] = {$/;"	v	typeref:struct:hjtCnMap
-hjtMsg	src/rkhjt.h	/^typedef struct hjtMsg {$/;"	s
-hjtMsg_t	src/rkhjt.h	/^} hjtMsg_t;$/;"	t	typeref:struct:hjtMsg
+hjtPkt	src/rkhjt.h	/^typedef struct hjtPkt {$/;"	s
+hjtPkt_t	src/rkhjt.h	/^} hjtPkt_t;$/;"	t	typeref:struct:hjtPkt
 hoffset	common/rkcalib.h	/^	uint16_t hoffset;$/;"	m	struct:SCalib
 hoffset	src/rktype.h	/^	uint16_t hoffset; \/* High Offset *\/$/;"	m	struct:aical
 iColumn	depend/include/sqlite3.h	/^     int iColumn;              \/* Column number *\/$/;"	m	struct:sqlite3_index_info::sqlite3_index_orderby
@@ -1150,7 +1161,8 @@ id	src/rktype.h	/^	uint8_t id;$/;"	m	struct:dioparam
 idxNum	depend/include/sqlite3.h	/^  int idxNum;                \/* Number used to identify the index *\/$/;"	m	struct:sqlite3_index_info
 idxStr	depend/include/sqlite3.h	/^  char *idxStr;              \/* String, possibly obtained from sqlite3_malloc *\/$/;"	m	struct:sqlite3_index_info
 inf	depend/include/readline/readline.h	/^  FILE *inf;$/;"	m	struct:readline_state
-init	lib/rkmodbus.c	/^int init(void *handle)$/;"	f
+init	lib/modbus/src/rkmodbus.c	/^int init(void *handle)$/;"	f
+init	lib/smc/src/rksmc.c	/^int init(void *handle)$/;"	f
 init	src/rktype.h	/^	int (* init)(void *handle);$/;"	m	struct:cfi
 insmode	depend/include/readline/readline.h	/^  int insmode;$/;"	m	struct:readline_state
 integer	depend/include/mxml.h	/^  int			integer;	\/* Integer number *\/$/;"	m	union:mxml_value_u
@@ -1231,8 +1243,8 @@ mark	depend/include/readline/readline.h	/^  int mark;$/;"	m	struct:readline_stat
 mask	src/rktype.h	/^	char mask[16]; \/* Subnet Mask *\/$/;"	m	struct:net
 max	common/rkfifo.c	20;"	d	file:
 max	src/rktype.h	/^	float max[4];$/;"	m	struct:statinfo
-mbRtuReqMsg	lib/rkmodbus.h	/^typedef struct mbRtuReqMsg {$/;"	s
-mbRtuReqMsg_t	lib/rkmodbus.h	/^} mbRtuReqMsg_t;$/;"	t	typeref:struct:mbRtuReqMsg
+mbRtuReqMsg	lib/modbus/src/rkmodbus.h	/^typedef struct mbRtuReqMsg {$/;"	s
+mbRtuReqMsg_t	lib/modbus/src/rkmodbus.h	/^} mbRtuReqMsg_t;$/;"	t	typeref:struct:mbRtuReqMsg
 mduen	src/rktype.h	/^	uint8_t		mduen; \/* Minute Data Upload Enable *\/$/;"	m	struct:sys
 memory_highwater	depend/include/sqlite3ext.h	/^  sqlite3_int64 (*memory_highwater)(int);$/;"	m	struct:sqlite3_api_routines
 memory_used	depend/include/sqlite3ext.h	/^  sqlite3_int64 (*memory_used)(void);$/;"	m	struct:sqlite3_api_routines
@@ -1240,7 +1252,7 @@ meta_character_bit	depend/include/readline/chardefs.h	57;"	d
 meta_character_threshold	depend/include/readline/chardefs.h	55;"	d
 min	common/rkfifo.c	19;"	d	file:
 min	src/rktype.h	/^	float min[4];$/;"	m	struct:statinfo
-mn	src/rkhjt.h	/^	char mn[16]; \/* Monitor Number *\/$/;"	m	struct:hjtMsg
+mn	src/rkhjt.h	/^	char mn[16]; \/* Monitor Number *\/$/;"	m	struct:hjtPkt
 mn	src/rktype.h	/^	char		mn[16]; \/* Device Id *\/$/;"	m	struct:sys
 mntdir	common/rkusb.h	/^	char mntdir[128];$/;"	m	struct:usbdisk
 mprintf	depend/include/sqlite3ext.h	/^  char * (*mprintf)(const char*,...);$/;"	m	struct:sqlite3_api_routines
@@ -1248,7 +1260,6 @@ msg	src/rkprotocol.h	/^	uint8_t		msg[RK_FTP_MESSAGE_MAX_LEN];$/;"	m	struct:rkFtp
 msg	src/rkprotocol.h	/^	uint8_t 	msg[RK_PROTOCOL_MESSAGE_MAX_LEN];$/;"	m	struct:rkMsgPkt
 msgTblCap	src/rkdsm.c	/^static int msgTblCap[] = { MAX_RTM_REC_NUM, MAX_MOM_REC_NUM, MAX_HOM_REC_NUM, MAX_DOM_REC_NUM, MAX_DIM_REC_NUM, MAX_AOM_REC_NUM};$/;"	v	file:
 msgTblName	src/rkdsm.c	/^static char *msgTblName[] = { RTM_TBL_NAME, MOM_TBL_NAME, HOM_TBL_NAME, DOM_TBL_NAME, DIM_TBL_NAME, AOM_TBL_NAME};$/;"	v	file:
-msgdb	src/rkdsm.c	/^static sqlite3 *rtddb, *msgdb;$/;"	v	file:
 mutex	src/rktype.h	/^	pthread_mutex_t mutex;$/;"	m	struct:edev
 mutex	src/rktype.h	/^	pthread_mutex_t mutex;$/;"	m	struct:net
 mutex_alloc	depend/include/sqlite3ext.h	/^  sqlite3_mutex *(*mutex_alloc)(int);$/;"	m	struct:sqlite3_api_routines
@@ -1290,7 +1301,8 @@ nRef	depend/include/sqlite3.h	/^  int nRef;                       \/* NO LONGER 
 name	depend/include/mxml.h	/^  char			*name;		\/* Attribute name *\/$/;"	m	struct:mxml_attr_s
 name	depend/include/mxml.h	/^  char			*name;		\/* Name of element *\/$/;"	m	struct:mxml_element_s
 name	depend/include/readline/readline.h	/^  const char *name;$/;"	m	struct:_funmap
-name	lib/rkmodbus.c	/^char *name(void)$/;"	f
+name	lib/modbus/src/rkmodbus.c	/^char *name(void)$/;"	f
+name	lib/smc/src/rksmc.c	/^char *name(void)$/;"	f
 name	src/rktype.h	/^	char *(* name)(void);$/;"	m	struct:cfi
 needToFreeIdxStr	depend/include/sqlite3.h	/^  int needToFreeIdxStr;      \/* Free idxStr using sqlite3_free() if true *\/$/;"	m	struct:sqlite3_index_info
 net	src/rktype.h	/^typedef struct net {$/;"	s
@@ -1300,7 +1312,7 @@ next	depend/include/mxml.h	/^  struct mxml_node_s	*next;		\/* Next node under sa
 next	depend/include/readline/readline.h	/^  struct undo_list *next;$/;"	m	struct:undo_list	typeref:struct:undo_list::undo_list
 next_stmt	depend/include/sqlite3ext.h	/^  sqlite3_stmt *(*next_stmt)(sqlite3*,sqlite3_stmt*);$/;"	m	struct:sqlite3_api_routines
 nodes	depend/include/mxml.h	/^  mxml_node_t		**nodes;	\/* Node array *\/$/;"	m	struct:mxml_index_s
-num	lib/rkmodbus.h	/^	uint16_t num;$/;"	m	struct:mbRtuReqMsg
+num	lib/modbus/src/rkmodbus.h	/^	uint16_t num;$/;"	m	struct:mbRtuReqMsg
 num_attrs	depend/include/mxml.h	/^  int			num_attrs;	\/* Number of attributes *\/$/;"	m	struct:mxml_element_s
 num_nodes	depend/include/mxml.h	/^  int			num_nodes;	\/* Number of nodes in index *\/$/;"	m	struct:mxml_index_s
 obj-m	drv/dio/driver/Makefile	/^	obj-m := dio.o$/;"	m
@@ -1335,15 +1347,16 @@ pVtab	depend/include/sqlite3.h	/^  sqlite3_vtab *pVtab;      \/* Virtual table o
 parent	depend/include/mxml.h	/^  struct mxml_node_s	*parent;	\/* Parent node *\/$/;"	m	struct:mxml_node_s	typeref:struct:mxml_node_s::mxml_node_s
 parity	src/rktype.h	/^	PARITY_T parity; \/* Parity Mode : ODD, EVEN or NONE *\/$/;"	m	struct:com
 pendingin	depend/include/readline/readline.h	/^  int pendingin;$/;"	m	struct:readline_state
-pno	src/rkhjt.h	/^	uint16_t pno; \/* Packet NO. *\/$/;"	m	struct:hjtMsg
-pnum	src/rkhjt.h	/^	uint16_t pnum; \/* Packet Number *\/$/;"	m	struct:hjtMsg
+pno	src/rkhjt.h	/^	uint16_t pno; \/* Packet NO. *\/$/;"	m	struct:hjtPkt
+pnum	src/rkhjt.h	/^	uint16_t pnum; \/* Packet Number *\/$/;"	m	struct:hjtPkt
 point	depend/include/readline/readline.h	/^  int point;$/;"	m	struct:readline_state
 prepare	depend/include/sqlite3ext.h	/^  int  (*prepare)(sqlite3*,const char*,int,sqlite3_stmt**,const char**);$/;"	m	struct:sqlite3_api_routines
 prepare16	depend/include/sqlite3ext.h	/^  int  (*prepare16)(sqlite3*,const void*,int,sqlite3_stmt**,const void**);$/;"	m	struct:sqlite3_api_routines
 prepare16_v2	depend/include/sqlite3ext.h	/^  int (*prepare16_v2)(sqlite3*,const void*,int,sqlite3_stmt**,const void**);$/;"	m	struct:sqlite3_api_routines
 prepare_v2	depend/include/sqlite3ext.h	/^  int (*prepare_v2)(sqlite3*,const char*,int,sqlite3_stmt**,const char**);$/;"	m	struct:sqlite3_api_routines
 prev	depend/include/mxml.h	/^  struct mxml_node_s	*prev;		\/* Previous node under same parent *\/$/;"	m	struct:mxml_node_s	typeref:struct:mxml_node_s::mxml_node_s
-printHex	lib/rkmodbus.c	/^int printHex(void *buf, int len)$/;"	f
+printHex	lib/modbus/src/rkmodbus.c	/^int printHex(void *buf, int len)$/;"	f
+printHex	lib/smc/src/rksmc.c	/^int printHex(void *buf, int len)$/;"	f
 printai	src/rkdebug.c	/^void printai(struct analog analog)$/;"	f
 printdio	src/rkdebug.c	/^void printdio(struct dio dio)$/;"	f
 printnet	src/rkdebug.c	/^void printnet(struct net net)$/;"	f
@@ -1353,14 +1366,13 @@ profile	depend/include/sqlite3ext.h	/^  void * (*profile)(sqlite3*,void(*)(void*
 progress_handler	depend/include/sqlite3ext.h	/^  void  (*progress_handler)(sqlite3*,int,int(*)(void*),void*);$/;"	m	struct:sqlite3_api_routines
 prompt	depend/include/readline/readline.h	/^  char *prompt;$/;"	m	struct:readline_state
 proto	src/rktype.h	/^	char proto[32]; \/* Library File Name *\/$/;"	m	struct:com
-pw	src/rkhjt.h	/^	char pw[8]; \/* Password *\/$/;"	m	struct:hjtMsg
+pw	src/rkhjt.h	/^	char pw[8]; \/* Password *\/$/;"	m	struct:hjtPkt
 pw	src/rktype.h	/^	char		pw[8]; \/* Password *\/$/;"	m	struct:sys
-qn	src/rkhjt.h	/^	char qn[24]; \/* Request Number *\/$/;"	m	struct:hjtMsg
+qn	src/rkhjt.h	/^	char qn[24]; \/* Request Number *\/$/;"	m	struct:hjtPkt
 queryCond	common/rkshm.h	/^typedef struct queryCond {$/;"	s
 queryCond_t	common/rkshm.h	/^} queryCond_t;$/;"	t	typeref:struct:queryCond
 queryReq	common/rkshm.h	/^typedef struct queryReq {$/;"	s
 queryReq_t	common/rkshm.h	/^} queryReq_t;$/;"	t	typeref:struct:queryReq
-ra	src/rktype.h	/^	int ra; \/* Register Address *\/$/;"	m	struct:edev
 raddr	src/rktype.h	/^	char raddr[16];  \/* Remote Ip Address *\/$/;"	m	struct:net
 randomness	depend/include/sqlite3ext.h	/^  void (*randomness)(int,void*);$/;"	m	struct:sqlite3_api_routines
 rduen	src/rktype.h	/^	uint8_t		rduen; \/* Real-time Data Upload Enable *\/$/;"	m	struct:sys
@@ -1369,9 +1381,10 @@ readline_state	depend/include/readline/readline.h	/^struct readline_state {$/;"	
 ready	common/rkshm.h	/^	uint8_t ready; \/* Server Ready To Transfer Data *\/$/;"	m	struct:queryReq
 real	depend/include/mxml.h	/^  double		real;		\/* Real number *\/$/;"	m	union:mxml_value_u
 realloc	depend/include/sqlite3ext.h	/^  void *(*realloc)(void*,int);$/;"	m	struct:sqlite3_api_routines
-recv	src/rkdtm.c	/^	int (* recv)(char *msg, uint32_t len, uint32_t timeout_ms);$/;"	m	struct:__anon17	file:
+recv	src/rkdtm.c	/^	int (* recv)(char *msg, uint32_t len, uint32_t timeout_ms);$/;"	m	struct:__anon18	file:
 ref_count	depend/include/mxml.h	/^  int			ref_count;	\/* Use count *\/$/;"	m	struct:mxml_node_s
-reg	lib/rkmodbus.h	/^	uint16_t reg;$/;"	m	struct:mbRtuReqMsg
+reg	lib/modbus/src/rkmodbus.h	/^	uint16_t reg;$/;"	m	struct:mbRtuReqMsg
+regaddr	src/rktype.h	/^	int regaddr; \/* Register Address *\/$/;"	m	struct:edev
 release_memory	depend/include/sqlite3ext.h	/^  int (*release_memory)(int);$/;"	m	struct:sqlite3_api_routines
 reserve	common/rkshm.h	/^	uint8_t reserve[2];$/;"	m	struct:queryCond
 reserve	common/rkshm.h	/^	uint8_t reserve[2];$/;"	m	struct:queryReq
@@ -1409,6 +1422,7 @@ rkCouGetCTblVal	src/rkcou.c	/^int rkCouGetCTblVal(const char *code, float *val)$
 rkCouInitCTbl	src/rkcou.c	/^int rkCouInitCTbl(struct codetbl *ctbl)$/;"	f
 rkCouUpdateCTbl	src/rkcou.c	/^int rkCouUpdateCTbl(const char *code, float val)$/;"	f
 rkCrc16	src/rkcrc.c	/^uint16_t rkCrc16(char *buf, uint16_t len)$/;"	f
+rkCrc16New	src/rkcrc.c	/^uint16_t rkCrc16New(char *src, uint16_t len)$/;"	f
 rkDamAiDataProc	src/rkdam.c	/^int rkDamAiDataProc(struct aiparam *ai, struct aical *cal)$/;"	f
 rkDamAiDataSample	src/rkdam.c	/^int rkDamAiDataSample(struct aiparam *ai)$/;"	f
 rkDamAiInit	src/rkdam.c	/^static int rkDamAiInit(struct analog *analog)$/;"	f	file:
@@ -1439,9 +1453,10 @@ rkDtmDtuInit	src/rkdtm.c	/^int rkDtmDtuInit(struct com *com)$/;"	f
 rkDtmEthInit	src/rkdtm.c	/^int rkDtmEthInit(struct net *net)$/;"	f
 rkDtmInit	src/rkdtm.c	/^int rkDtmInit(struct context *ctx)$/;"	f
 rkDtmMonitorThread	src/rkdtm.c	/^void rkDtmMonitorThread(void *handle)$/;"	f
-rkDtmProcHjtMsg	src/rkdtm.c	/^int rkDtmProcHjtMsg(struct hjtMsg *msg)$/;"	f
+rkDtmParseHjtMsg	src/rkdtm.c	/^int rkDtmParseHjtMsg(char *msg, struct hjtPkt *pkt)$/;"	f
+rkDtmProcHjtReq	src/rkdtm.c	/^int rkDtmProcHjtReq(struct hjtPkt *pkt)$/;"	f
 rkDtmRecv	src/rkdtm.c	/^int rkDtmRecv(char *msg, uint32_t len, uint32_t timeout_ms)$/;"	f
-rkDtmRecvHjtMsg	src/rkdtm.c	/^int rkDtmRecvHjtMsg(struct hjtMsg *msg, uint32_t timeout_ms)$/;"	f
+rkDtmRecvHjtMsg	src/rkdtm.c	/^int rkDtmRecvHjtMsg(char *msg)$/;"	f
 rkDtmRecvThread	src/rkdtm.c	/^void rkDtmRecvThread(void *handle)$/;"	f
 rkDtmReuseDtu	src/rkdtm.c	/^int rkDtmReuseDtu()$/;"	f
 rkDtmRun	src/rkdtm.c	/^void rkDtmRun(void *handle)$/;"	f
@@ -1486,51 +1501,51 @@ rkGenEchoMsgOfLogin	src/rkprotocol.c	/^int rkGenEchoMsgOfLogin(rkMsgPkt_t *recvM
 rkGenEchoMsgOfPutConfig	src/rkprotocol.c	/^int rkGenEchoMsgOfPutConfig(rkMsgPkt_t *recvMsg, rkMsgPkt_t *sendMsg)$/;"	f
 rkGenEchoMsgOfRebootDevice	src/rkprotocol.c	/^int rkGenEchoMsgOfRebootDevice(rkMsgPkt_t *sendMsg)$/;"	f
 rkGenEchoMsgOfUpgradeFirmware	src/rkprotocol.c	/^int rkGenEchoMsgOfUpgradeFirmware(int type, rkMsgPkt_t *recvMsg, rkMsgPkt_t *sendMsg)$/;"	f
-rkGenModbusMsg03	lib/rkmodbus.c	/^int rkGenModbusMsg03(char *buf, unsigned int bufsize, uint8_t slvaddr, uint16_t regaddr)$/;"	f
+rkGenModbusMsg03	lib/modbus/src/rkmodbus.c	/^int rkGenModbusMsg03(char *buf, uint8_t slvaddr, uint16_t regaddr, uint8_t datatype)$/;"	f
+rkGenSmcMsg	lib/smc/src/rksmc.c	/^int rkGenSmcMsg(char *buf, uint8_t slvaddr, uint16_t regaddr, uint8_t datatype)$/;"	f
 rkGetCoreVersion	common/rkshm.c	/^const char *rkGetCoreVersion()$/;"	f
 rkGetGuiVersion	common/rkshm.c	/^const char *rkGetGuiVersion()$/;"	f
 rkHandleReceivedMsg	src/rkserver.c	/^int rkHandleReceivedMsg(rkMsgPkt_t *recvBuffer) $/;"	f
-rkHjtExeCmd1000	src/rkhjt.c	/^int rkHjtExeCmd1000(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
-rkHjtExeCmd1001	src/rkhjt.c	/^int rkHjtExeCmd1001(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
-rkHjtExeCmd1012	src/rkhjt.c	/^int rkHjtExeCmd1012(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
-rkHjtExeCmd1022	src/rkhjt.c	/^int rkHjtExeCmd1022(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
-rkHjtExeCmd1032	src/rkhjt.c	/^int rkHjtExeCmd1032(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
-rkHjtExeCmd1042	src/rkhjt.c	/^int rkHjtExeCmd1042(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
-rkHjtExeCmd1062	src/rkhjt.c	/^int rkHjtExeCmd1062(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
-rkHjtExeCmd1072	src/rkhjt.c	/^int rkHjtExeCmd1072(struct hjtMsg *msg, char **rsp, void  *arg)$/;"	f
-rkHjtExeCmd1092	src/rkhjt.c	/^int rkHjtExeCmd1092(struct hjtMsg *msg, char **rsp, void  *arg)$/;"	f
-rkHjtExeCmd2012	src/rkhjt.c	/^int rkHjtExeCmd2012(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
-rkHjtExeCmd2022	src/rkhjt.c	/^int rkHjtExeCmd2022(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
-rkHjtExeCmd3011	src/rkhjt.c	/^int rkHjtExeCmd3011(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
-rkHjtExeCmd3012	src/rkhjt.c	/^int rkHjtExeCmd3012(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
-rkHjtExeCmd3013	src/rkhjt.c	/^int rkHjtExeCmd3013(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
-rkHjtExeCmd3014	src/rkhjt.c	/^int rkHjtExeCmd3014(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtExeCmd1000	src/rkhjt.c	/^int rkHjtExeCmd1000(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
+rkHjtExeCmd1001	src/rkhjt.c	/^int rkHjtExeCmd1001(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
+rkHjtExeCmd1012	src/rkhjt.c	/^int rkHjtExeCmd1012(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
+rkHjtExeCmd1022	src/rkhjt.c	/^int rkHjtExeCmd1022(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
+rkHjtExeCmd1032	src/rkhjt.c	/^int rkHjtExeCmd1032(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
+rkHjtExeCmd1042	src/rkhjt.c	/^int rkHjtExeCmd1042(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
+rkHjtExeCmd1062	src/rkhjt.c	/^int rkHjtExeCmd1062(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
+rkHjtExeCmd1072	src/rkhjt.c	/^int rkHjtExeCmd1072(struct hjtPkt *pkt, char *msg, void  *arg)$/;"	f
+rkHjtExeCmd1092	src/rkhjt.c	/^int rkHjtExeCmd1092(struct hjtPkt *pkt, char *msg, void  *arg)$/;"	f
+rkHjtExeCmd2012	src/rkhjt.c	/^int rkHjtExeCmd2012(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
+rkHjtExeCmd2022	src/rkhjt.c	/^int rkHjtExeCmd2022(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
+rkHjtExeCmd3011	src/rkhjt.c	/^int rkHjtExeCmd3011(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
+rkHjtExeCmd3012	src/rkhjt.c	/^int rkHjtExeCmd3012(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
+rkHjtExeCmd3013	src/rkhjt.c	/^int rkHjtExeCmd3013(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
+rkHjtExeCmd3014	src/rkhjt.c	/^int rkHjtExeCmd3014(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
 rkHjtFillMsgEnd	src/rkhjt.c	/^void rkHjtFillMsgEnd(char *msg)$/;"	f
 rkHjtFillMsgHdr	src/rkhjt.c	/^void rkHjtFillMsgHdr(uint16_t cn, char *buf)$/;"	f
 rkHjtFltToStr	src/rkhjt.c	/^static char *rkHjtFltToStr(float val)$/;"	f	file:
-rkHjtFree	src/rkhjt.c	/^void rkHjtFree(void *handle)$/;"	f
-rkHjtGenMsg1011	src/rkhjt.c	/^int rkHjtGenMsg1011(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
-rkHjtGenMsg1021	src/rkhjt.c	/^int rkHjtGenMsg1021(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
-rkHjtGenMsg1031	src/rkhjt.c	/^int rkHjtGenMsg1031(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
-rkHjtGenMsg1041	src/rkhjt.c	/^int rkHjtGenMsg1041(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
-rkHjtGenMsg1061	src/rkhjt.c	/^int rkHjtGenMsg1061(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
-rkHjtGenMsg1091	src/rkhjt.c	/^int rkHjtGenMsg1091(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
-rkHjtGenMsg2011	src/rkhjt.c	/^int rkHjtGenMsg2011(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
-rkHjtGenMsg2021	src/rkhjt.c	/^int rkHjtGenMsg2021(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
-rkHjtGenMsg2031	src/rkhjt.c	/^int rkHjtGenMsg2031(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
-rkHjtGenMsg2041	src/rkhjt.c	/^int rkHjtGenMsg2041(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
-rkHjtGenMsg2051	src/rkhjt.c	/^int rkHjtGenMsg2051(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
-rkHjtGenMsg2061	src/rkhjt.c	/^int rkHjtGenMsg2061(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
-rkHjtGenMsg2071	src/rkhjt.c	/^int rkHjtGenMsg2071(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
-rkHjtGenMsg2072	src/rkhjt.c	/^int rkHjtGenMsg2072(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
-rkHjtGenMsg2081	src/rkhjt.c	/^int rkHjtGenMsg2081(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
-rkHjtGenMsg3051	src/rkhjt.c	/^int rkHjtGenMsg3051(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
-rkHjtGenMsg9011	src/rkhjt.c	/^int rkHjtGenMsg9011(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
-rkHjtGenMsg9012	src/rkhjt.c	/^int rkHjtGenMsg9012(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
-rkHjtGenMsg9013	src/rkhjt.c	/^int rkHjtGenMsg9013(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
-rkHjtGenMsg9014	src/rkhjt.c	/^int rkHjtGenMsg9014(struct hjtMsg *msg, char **rsp, void *arg)$/;"	f
+rkHjtGenMsg1011	src/rkhjt.c	/^int rkHjtGenMsg1011(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
+rkHjtGenMsg1021	src/rkhjt.c	/^int rkHjtGenMsg1021(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
+rkHjtGenMsg1031	src/rkhjt.c	/^int rkHjtGenMsg1031(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
+rkHjtGenMsg1041	src/rkhjt.c	/^int rkHjtGenMsg1041(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
+rkHjtGenMsg1061	src/rkhjt.c	/^int rkHjtGenMsg1061(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
+rkHjtGenMsg1091	src/rkhjt.c	/^int rkHjtGenMsg1091(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
+rkHjtGenMsg2011	src/rkhjt.c	/^int rkHjtGenMsg2011(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
+rkHjtGenMsg2021	src/rkhjt.c	/^int rkHjtGenMsg2021(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
+rkHjtGenMsg2031	src/rkhjt.c	/^int rkHjtGenMsg2031(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
+rkHjtGenMsg2041	src/rkhjt.c	/^int rkHjtGenMsg2041(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
+rkHjtGenMsg2051	src/rkhjt.c	/^int rkHjtGenMsg2051(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
+rkHjtGenMsg2061	src/rkhjt.c	/^int rkHjtGenMsg2061(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
+rkHjtGenMsg2071	src/rkhjt.c	/^int rkHjtGenMsg2071(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
+rkHjtGenMsg2072	src/rkhjt.c	/^int rkHjtGenMsg2072(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
+rkHjtGenMsg2081	src/rkhjt.c	/^int rkHjtGenMsg2081(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
+rkHjtGenMsg3051	src/rkhjt.c	/^int rkHjtGenMsg3051(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
+rkHjtGenMsg9011	src/rkhjt.c	/^int rkHjtGenMsg9011(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
+rkHjtGenMsg9012	src/rkhjt.c	/^int rkHjtGenMsg9012(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
+rkHjtGenMsg9013	src/rkhjt.c	/^int rkHjtGenMsg9013(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
+rkHjtGenMsg9014	src/rkhjt.c	/^int rkHjtGenMsg9014(struct hjtPkt *pkt, char *msg, void *arg)$/;"	f
 rkHjtInit	src/rkhjt.c	/^int rkHjtInit(struct context *handle)$/;"	f
-rkHjtParseMsg	src/rkhjt.c	/^int rkHjtParseMsg(char *raw, struct hjtMsg *msg, HJT_ERR_T *err)$/;"	f
+rkHjtParseMsg	src/rkhjt.c	/^int rkHjtParseMsg(char *msg, struct hjtPkt *pkt)$/;"	f
 rkHmiInit	src/rkhmi.c	/^int rkHmiInit()$/;"	f
 rkHmiRun	src/rkhmi.c	/^void rkHmiRun(void *handle)$/;"	f
 rkInitAiCalParam	src/rkinit.c	/^void rkInitAiCalParam(struct analog *analog)$/;"	f
@@ -1548,7 +1563,7 @@ rkIsReloadFlagBeenSet	common/rkshm.c	/^int rkIsReloadFlagBeenSet()$/;"	f
 rkIsReqExit	common/rkshm.c	/^int rkIsReqExit()$/;"	f
 rkLibGetPath	src/rkscan.c	/^const char *rkLibGetPath(const char *lname)$/;"	f
 rkLibScan	src/rkscan.c	/^int rkLibScan(const char *path)$/;"	f
-rkMbProcResp	lib/rkmodbus.c	/^static int rkMbProcResp(char *buf, uint8_t slvaddr, float *val)$/;"	f	file:
+rkMbProcResp	lib/modbus/src/rkmodbus.c	/^int rkMbProcResp(char *buf, float *val)$/;"	f
 rkMsgPkt	src/rkprotocol.h	/^typedef struct rkMsgPkt {$/;"	s
 rkMsgPkt_t	src/rkprotocol.h	/^} rkMsgPkt_t;$/;"	t	typeref:struct:rkMsgPkt
 rkParseCmdLineArg	src/rkinit.c	/^static int rkParseCmdLineArg(struct context *ctx, int argc, char *argv[])$/;"	f	file:
@@ -1572,20 +1587,20 @@ rkQueryCond_t	src/rkdsm.h	/^} rkQueryCond_t;$/;"	t	typeref:struct:rkQueryCond
 rkRebootDevice	src/rkserver.c	/^void rkRebootDevice()$/;"	f
 rkRec	common/rkshm.h	/^typedef struct rkRec{$/;"	s
 rkRec_t	common/rkshm.h	/^} rkRec_t;$/;"	t	typeref:struct:rkRec
-rkRecvModbusResp	lib/rkmodbus.c	/^static int rkRecvModbusResp(char *buf, uint8_t slvaddr, uint16_t regaddr, int fd)$/;"	f	file:
+rkRecvModbusResp03	lib/modbus/src/rkmodbus.c	/^int rkRecvModbusResp03(char *buf, uint8_t slvaddr, uint16_t regaddr, int fd)$/;"	f
 rkRecvMsgBoth	src/rkdtm.c	/^int rkRecvMsgBoth(char *msg, uint32_t len, uint32_t timeout_ms)$/;"	f
 rkRecvMsgByDtu	src/rkdtm.c	/^int rkRecvMsgByDtu(char *msg, uint32_t len, uint32_t timeout_ms)$/;"	f
 rkRecvMsgByEth	src/rkdtm.c	/^int rkRecvMsgByEth(char *msg, uint32_t len, uint32_t timeout_ms)$/;"	f
+rkRecvSmcResp	lib/smc/src/rksmc.c	/^int rkRecvSmcResp(char *buf, float *val, int fd)$/;"	f
 rkReloadUsrCfg	src/rkinit.c	/^int rkReloadUsrCfg(struct context *ctx)$/;"	f
 rkReqCoreExit	common/rkshm.c	/^void rkReqCoreExit()$/;"	f
-rkRiuThread	src/rkdsm.c	/^void rkRiuThread(void *handle)$/;"	f
-rkRtdSaveThread	src/rkdsm.c	/^void rkRtdSaveThread(void *handle)$/;"	f
 rkScanDynamicProtocol	src/rkinit.c	/^int rkScanDynamicProtocol(struct context *ctx)$/;"	f
 rkSendBeatPktByEth	src/rkdtm.c	/^int rkSendBeatPktByEth(void)$/;"	f
-rkSendModbusReq	lib/rkmodbus.c	/^static int rkSendModbusReq(int fd, const char *sendbuf, int bufsize)$/;"	f	file:
+rkSendModbusReq	lib/modbus/src/rkmodbus.c	/^int rkSendModbusReq(int fd, const char *sendbuf, int bufsize)$/;"	f
 rkSendMsgBoth	src/rkdtm.c	/^int rkSendMsgBoth(const char *msg, uint32_t len)$/;"	f
 rkSendMsgByDtu	src/rkdtm.c	/^int rkSendMsgByDtu(const char *msg, uint32_t len)$/;"	f
 rkSendMsgByEth	src/rkdtm.c	/^int rkSendMsgByEth(const char *msg, uint32_t len)$/;"	f
+rkSendSmcReq	lib/smc/src/rksmc.c	/^int rkSendSmcReq(int fd, const char *sendbuf, int bufsize)$/;"	f
 rkSerClose	src/rkser.c	/^int rkSerClose(int fd)$/;"	f
 rkSerOpen	src/rkser.c	/^int rkSerOpen(struct com *com)$/;"	f
 rkSerRecv	src/rkser.c	/^int rkSerRecv(char *buf, uint32_t len, int timeout, int fd)$/;"	f
@@ -1667,17 +1682,17 @@ rollback_hook	depend/include/sqlite3ext.h	/^  void * (*rollback_hook)(sqlite3*,v
 rport	src/rktype.h	/^	uint16_t rport; \/* Remote Port *\/$/;"	m	struct:net
 rtdInfo	common/rkshm.h	/^typedef struct rtdInfo{$/;"	s
 rtdInfo_t	common/rkshm.h	/^} rtdInfo_t;$/;"	t	typeref:struct:rtdInfo
-rtddb	src/rkdsm.c	/^static sqlite3 *rtddb, *msgdb;$/;"	v	file:
 rtdfalg	src/rktype.h	/^	uint8_t		rtdfalg; \/* Use RTD-Flag Or Not *\/$/;"	m	struct:sys
 run	debug/thread/main.c	/^void run(void *arg)$/;"	f
-run	lib/rkmodbus.c	/^int run(void *handle)$/;"	f
+run	lib/modbus/src/rkmodbus.c	/^int run(void *handle)$/;"	f
+run	lib/smc/src/rksmc.c	/^int run(void *handle)$/;"	f
 run	src/rktype.h	/^	int (* run)(void *handle);$/;"	m	struct:cfi
 s_aCalib	common/rkcalib.c	/^static struct SCalib s_aCalib[AI_NUM];$/;"	v	typeref:struct:SCalib	file:
 sample_order	drv/dio/driver/dio.c	/^static int sample_order = 1;		\/\/数字量的采集顺序，为0时是1.0，为1时是2.0$/;"	v	file:
 sb	src/rktype.h	/^	uint8_t sb; \/* Stop Bits *\/$/;"	m	struct:com
 sduen	src/rktype.h	/^	uint8_t		sduen; \/* Switch Data Upload Enable *\/$/;"	m	struct:sys
 sem	common/rkfifo.h	/^	sem_t sem;$/;"	m	struct:fifohdr
-send	src/rkdtm.c	/^	int (* send)(const char *msg, uint32_t len);$/;"	m	struct:__anon17	file:
+send	src/rkdtm.c	/^	int (* send)(const char *msg, uint32_t len);$/;"	m	struct:__anon18	file:
 seq	src/rkprotocol.h	/^	uint16_t	seq;$/;"	m	struct:rkFtpMsgPkt
 set_authorizer	depend/include/sqlite3ext.h	/^  int  (*set_authorizer)(sqlite3*,int(*)(void*,int,const char*,const char*,$/;"	m	struct:sqlite3_api_routines
 set_auxdata	depend/include/sqlite3ext.h	/^  void  (*set_auxdata)(sqlite3_context*,int,void*,void (*)(void*));$/;"	m	struct:sqlite3_api_routines
@@ -1942,7 +1957,7 @@ sqlite_int64	depend/include/sqlite3.h	/^  typedef long long int sqlite_int64;$/;
 sqlite_uint64	depend/include/sqlite3.h	/^  typedef unsigned SQLITE_INT64_TYPE sqlite_uint64;$/;"	t
 sqlite_uint64	depend/include/sqlite3.h	/^  typedef unsigned __int64 sqlite_uint64;$/;"	t
 sqlite_uint64	depend/include/sqlite3.h	/^  typedef unsigned long long int sqlite_uint64;$/;"	t
-st	src/rkhjt.h	/^	uint8_t st; \/* System Type *\/$/;"	m	struct:hjtMsg
+st	src/rkhjt.h	/^	uint8_t st; \/* System Type *\/$/;"	m	struct:hjtPkt
 st	src/rktype.h	/^	uint8_t		st; \/* System Type *\/$/;"	m	struct:sys
 start	common/rkshm.h	/^	time_t start;$/;"	m	struct:queryCond
 start	depend/include/readline/readline.h	/^  int start, end;		\/* Where the change took place. *\/$/;"	m	struct:undo_list

@@ -219,6 +219,7 @@ int rkScanDynamicProtocol(struct context *ctx)
 
 		if ((libName = func()) != NULL) {
 			if (strlen(ctx->m_aDynamicProtocolSet)) {
+				strcat(ctx->m_aDynamicProtocolSet, ",");
 				strcat(ctx->m_aDynamicProtocolSet, libName);
 			} else {
 				bzero(ctx->m_aDynamicProtocolSet, sizeof(ctx->m_aDynamicProtocolSet));

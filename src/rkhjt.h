@@ -23,7 +23,7 @@ typedef enum {
 	HJTEXECNODATA,
 } HJT_RST_T;
 
-typedef struct hjtMsg {
+typedef struct hjtPkt {
 	char qn[24]; /* Request Number */
 	char pw[8]; /* Password */
 	char mn[16]; /* Monitor Number */
@@ -33,11 +33,10 @@ typedef struct hjtMsg {
 	uint16_t pnum; /* Packet Number */
 	uint16_t pno; /* Packet NO. */
 	char cp[1024]; /* Command Parameter */
-} hjtMsg_t;
+} hjtPkt_t;
 
 typedef enum {
-	HJTNORMAL = 0,
-	HJTERRMN,
+	HJTERRMN = 1,
 	HJTERRPW,
 	HJTERRMSG,
 } HJT_ERR_T;
@@ -46,7 +45,7 @@ typedef enum {
  * Command number map 
  */
 typedef struct hjtCnMap {
-	int (* func)(struct hjtMsg *msg, char **rsp, void *arg);
+	int (* func)(struct hjtPkt *pkt, char *msg, void *arg);
 	uint16_t cn;
 	int flag; /* if flag is 1, we need answer */
 } hjtCnMap_t;
@@ -55,47 +54,47 @@ typedef struct hjtCnMap {
 extern const struct hjtCnMap hjtCnTab[];
 
 int rkHjtInit(struct context *handle);
-int rkHjtParseMsg(char *raw, struct hjtMsg *msg, HJT_ERR_T *err);
+int rkHjtParseMsg(char *msg, struct hjtPkt *pkt);
 void rkHjtFillMsgHdr(uint16_t cn, char *buf);
 void rkHjtFillMsgEnd(char *msg);
-char *rkHjtGenMsgQnRtn(HJT_RTN_T rtn, struct hjtMsg *msg);
+char *rkHjtGenMsgQnRtn(HJT_RTN_T rtn, struct hjtPkt *msg);
 void rkHjtFree(void *handle);
 
 /* HJT/212 Functions */
-int rkHjtExeCmd1000(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtExeCmd1001(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtGenMsg1011(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtExeCmd1012(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtGenMsg1021(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtExeCmd1022(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtGenMsg1031(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtExeCmd1032(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtGenMsg1041(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtExeCmd1042(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtGenMsg1061(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtExeCmd1062(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtExeCmd1072(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtGenMsg1091(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtExeCmd1092(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtGenMsg2011(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtExeCmd2012(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtGenMsg2021(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtExeCmd2022(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtGenMsg2031(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtGenMsg2041(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtGenMsg2051(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtGenMsg2061(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtGenMsg2071(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtGenMsg2072(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtGenMsg2081(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtExeCmd3011(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtExeCmd3012(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtExeCmd3013(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtExeCmd3014(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtGenMsg9011(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtGenMsg9012(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtGenMsg9013(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtGenMsg9014(struct hjtMsg *msg, char **rsp, void *arg);
-int rkHjtGenMsg3051(struct hjtMsg *msg, char **rsp, void *arg);
+int rkHjtExeCmd1000(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtExeCmd1001(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtGenMsg1011(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtExeCmd1012(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtGenMsg1021(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtExeCmd1022(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtGenMsg1031(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtExeCmd1032(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtGenMsg1041(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtExeCmd1042(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtGenMsg1061(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtExeCmd1062(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtExeCmd1072(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtGenMsg1091(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtExeCmd1092(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtGenMsg2011(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtExeCmd2012(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtGenMsg2021(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtExeCmd2022(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtGenMsg2031(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtGenMsg2041(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtGenMsg2051(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtGenMsg2061(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtGenMsg2071(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtGenMsg2072(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtGenMsg2081(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtExeCmd3011(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtExeCmd3012(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtExeCmd3013(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtExeCmd3014(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtGenMsg9011(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtGenMsg9012(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtGenMsg9013(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtGenMsg9014(struct hjtPkt *pkt, char *msg, void *arg);
+int rkHjtGenMsg3051(struct hjtPkt *pkt, char *msg, void *arg);
 
 #endif /* _RK_HJT_H_ */

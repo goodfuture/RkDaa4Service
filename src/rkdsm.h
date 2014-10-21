@@ -26,8 +26,6 @@
 #define DIM_TBL_NAME "DimTable"
 #define AOM_TBL_NAME "AomTable"
 
-#define RUNTIME_INFO_UPDATE_INTERVAL_S 5
-
 #define MAX_RI_REC_NUM 50
 #define MAX_RTD_REC_NUM 20160
 #define MAX_RTM_REC_NUM 20160 

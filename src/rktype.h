@@ -275,4 +275,6 @@ typedef struct context {
 	char			m_aDynamicProtocolSet[512];
 } context_t;
 
+extern struct context ctx;
+
 #endif /* _RK_TYPE_H_ */

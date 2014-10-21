@@ -122,8 +122,6 @@ int rkSerSend(const char *buf, uint32_t len, int fd)
 {
 	int cnt;
 
-	if (fd <= 0) return -1;
-
 	cnt = write(fd, buf, len);
 	usleep(50000);
 
@@ -135,10 +133,6 @@ int rkSerRecv(char *buf, uint32_t len, int timeout, int fd)
 	int cnt, ret;
 	fd_set rfds;
 	struct timeval overtime;
-
-	if(fd < 0) {
-		return -1;
-	}
 
 	overtime.tv_sec = timeout / 1000;
 	overtime.tv_usec = (timeout % 1000) * 1000;

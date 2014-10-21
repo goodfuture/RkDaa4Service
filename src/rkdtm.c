@@ -274,7 +274,6 @@ int rkSendMsgByEth(const char *msg, uint32_t len)
 {
 	int rc;
 	time_t tm;
-	char buf[256];
 
 	time(&tm);
 	if (IS_ETH_LINK_ABNORMAL(dtmnet->linkst)) {
@@ -284,9 +283,6 @@ int rkSendMsgByEth(const char *msg, uint32_t len)
 	pthread_mutex_lock(&dtmnet->mutex);
 	rc = send(dtmnet->connectfd, msg, len, 0);
 	pthread_mutex_unlock(&dtmnet->mutex);
-	sprintf(buf, "%s", ctime(&tm));
-	buf[strlen(buf - 1)] = '\0';
-	printf("%s : send_count = %d\n", ctime(&tm), rc);
 	if (rc == -1) {
 		pthread_mutex_lock(&dtmnet->mutex);
 		CLEAR_ETH_LINK_FLAG(dtmnet->linkst);
@@ -436,16 +432,6 @@ void rkDtmMonitorThread(void *handle)
 		time(&current_time);
 
 		if ((IS_MSG_UPLOAD_BY_ETH(ctx->m_tSystemParam.dum) || IS_MSG_UPLOAD_BY_ETH_AND_DTU(ctx->m_tSystemParam.dum))) {
-#if 0
-			/* Send Heart-Beat Packet */
-			if (IS_ETH_LINKED(dtmnet->linkst) && current_time - last_time > 30) {
-				if (rkSendBeatPktByEth() == -1) {
-					fprintf(stderr, "Ethernet Link Dropped!\n");
-					CLEAR_ETH_LINK_FLAG(dtmnet->linkst);
-				}
-				last_time = current_time;
-			}
-#endif
 			if (IS_ETH_LINK_ABNORMAL(dtmnet->linkst)) {
 				for (trytime = 0; trytime < 3; trytime++) {
 					time(&last_time);
@@ -460,17 +446,6 @@ void rkDtmMonitorThread(void *handle)
 					}
 					usleep(500000);
 				}
-			} else {
-#if 0
-				char recv_buf[16];
-				int ret = read(dtmnet->connectfd, recv_buf, sizeof(recv_buf));
-				if (ret == 0) {
-					pthread_mutex_lock(&dtmnet->mutex);
-					close(dtmnet->connectfd);
-					pthread_mutex_unlock(&dtmnet->mutex);
-					CLEAR_ETH_LINK_FLAG(dtmnet->linkst);
-				}
-#endif
 			}
 		}
 		usleep(10000);
@@ -480,12 +455,16 @@ void rkDtmMonitorThread(void *handle)
 void rkDtmRecvThread(void *handle)
 {
 	int ret;
-	struct hjtMsg msg;
+	char msg[HJT_MSG_MAX_LEN];
+	struct hjtPkt pkt;
 
 	while(1) {
-		ret = rkDtmRecvHjtMsg(&msg, HJT_CMD_RECV_TIMEOUT_MS);
-		if (ret == 0) {
-			rkDtmProcHjtMsg(&msg);
+		bzero(msg, HJT_MSG_MAX_LEN);
+		ret = rkDtmRecvHjtMsg(msg);
+		if (ret != -1) {
+			if (rkDtmParseHjtMsg(msg, &pkt) != -1) {
+				rkDtmProcHjtReq(&pkt);
+			}
 		}
 
 		usleep(HJT_CMD_RECV_INTERVAL_MS * 1000);
@@ -500,7 +479,7 @@ void rkDtmUploadThread(void *handle)
 	time_t ctm, ltm = 0; /* Current Time, Last Time */
 	struct tm *tms; /* Time Structure */
 	int rc, arg, last_month;
-	char *msg = NULL;
+	char msg[HJT_MSG_MAX_LEN];
 
 	time(&ltm);
 	while(1) {
@@ -511,14 +490,10 @@ void rkDtmUploadThread(void *handle)
 			if ((ctm - ltm) >= ctx->m_tSystemParam.dui || ctm - ltm < 0) {
 				ltm = ctm;
 				do {
-					rc = rkHjtGenMsg2011(NULL, &msg, NULL);
-					if (rc >= 0 && msg != NULL) {
-						rkDsmSaveMsg(MSGTYPERTM, msg);
-						rkDtmSend(msg, strlen(msg));
-						rkHjtFree(msg);
-					} else {
-						fprintf(stderr, "%s : failed to generate message HJT2011.\n", __func__);
-					}
+					bzero(msg, HJT_MSG_MAX_LEN);
+					rc = rkHjtGenMsg2011(NULL, msg, NULL);
+					rkDsmSaveMsg(MSGTYPERTM, msg);
+					rkDtmSend(msg, strlen(msg));
 				} while (rc > 0);
 			}
 		}
@@ -526,16 +501,10 @@ void rkDtmUploadThread(void *handle)
 		/* Upload MOM Message, HJT2051 */
 		if (ctx->m_tSystemParam.mduen && (tms->tm_min % 10 == 0) && (tms->tm_sec == 0)) {
 			do {
-				rc = rkHjtGenMsg2051(NULL, &msg, NULL);
-				//printf("msg = %s\n", msg);
-				//printf("strlen(msg) = %d\n", strlen(msg));
-				if (rc >= 0 && msg != NULL) {
-					rkDsmSaveMsg(MSGTYPEMOM, msg);
-					rkDtmSend(msg, strlen(msg));
-					rkHjtFree(msg);
-				} else {
-					fprintf(stderr, "%s : failed to generate message HJT2051.\n", __func__);
-				}
+				bzero(msg, HJT_MSG_MAX_LEN);
+				rc = rkHjtGenMsg2051(NULL, msg, NULL);
+				rkDsmSaveMsg(MSGTYPEMOM, msg);
+				rkDtmSend(msg, strlen(msg));
 			} while(rc > 0);
 			rkDamClrStatData(ctx, MNT_STAT_DATA);
 		}
@@ -543,31 +512,23 @@ void rkDtmUploadThread(void *handle)
 		/* Upload HOM Message, HJT2061 */
 		if (ctx->m_tSystemParam.hduen  && (tms->tm_min == 0) && (tms->tm_sec == 5)) {
 			do {
-				rc = rkHjtGenMsg2061(NULL, &msg, NULL);
-				if (rc >= 0 && msg != NULL) {
-					rkDtmSend(msg, strlen(msg));
-					rkDsmSaveMsg(MSGTYPEHOM, msg);
-					rkHjtFree(msg);
-				} else {
-					fprintf(stderr, "%s : failed to generate message HJT2061.\n", __func__);
-				}
-				rkDamClrStatData(ctx, HOU_STAT_DATA);
+				bzero(msg, HJT_MSG_MAX_LEN);
+				rc = rkHjtGenMsg2061(NULL, msg, NULL);
+				rkDtmSend(msg, strlen(msg));
+				rkDsmSaveMsg(MSGTYPEHOM, msg);
 			} while(rc > 0);
+			rkDamClrStatData(ctx, HOU_STAT_DATA);
 		}
 
 		/* Upload DOM Message, HJT2031 */
 		if (ctx->m_tSystemParam.dduen  && (tms->tm_hour == 0) && (tms->tm_min == 0) && (tms->tm_sec == 10)) {
 			do {
-				rc = rkHjtGenMsg2031(NULL, &msg, NULL);
-				if (rc >= 0 && msg != NULL) {
-					rkDtmSend(msg, strlen(msg));
-					rkDsmSaveMsg(MSGTYPEDOM, msg);
-					rkHjtFree(msg);
-				} else {
-					fprintf(stderr, "%s : failed to generate message HJT2031.\n", __func__);
-				}
-				rkDamClrStatData(ctx, DAY_STAT_DATA);
+				bzero(msg, HJT_MSG_MAX_LEN);
+				rc = rkHjtGenMsg2031(NULL, msg, NULL);
+				rkDtmSend(msg, strlen(msg));
+				rkDsmSaveMsg(MSGTYPEDOM, msg);
 			} while(rc > 0);
+			rkDamClrStatData(ctx, DAY_STAT_DATA);
 		}
 
 		/* Clear Month Statistic Data Monthly */
@@ -579,37 +540,29 @@ void rkDtmUploadThread(void *handle)
 		/* Upload DI Message, HJT3051*/
 		if (ctx->m_tSystemParam.sduen && ctx->m_tDioParam.m_uDiChangedFlag) {
 			do {
-				rc = rkHjtGenMsg3051(NULL, &msg, NULL);
-				if (rc >= 0 && msg != NULL) {
-					rkDsmSaveMsg(MSGTYPEDIM, msg);
-					rkDtmSend(msg, strlen(msg));
-					rkHjtFree(msg);
-				} else {
-					fprintf(stderr, "%s : failed to generate message HJT3051.\n", __func__);
-				}
-				ctx->m_tDioParam.m_uDiChangedFlag = 0;
+				bzero(msg, HJT_MSG_MAX_LEN);
+				rc = rkHjtGenMsg3051(NULL, msg, NULL);
+				rkDsmSaveMsg(MSGTYPEDIM, msg);
+				rkDtmSend(msg, strlen(msg));
 			} while(rc > 0);
+			ctx->m_tDioParam.m_uDiChangedFlag = 0;
 		}
 
 		/* Upload Alarm Message, HJT2072 */
 		if (ctx->m_tSystemParam.alarmen && ctx->m_tAnalogParam.m_uAlarmFlag) {
 			do {
 				arg =  ctx->m_tAnalogParam.m_uAlarmFlag == 1 ? ALARM_H : ALARM_N;
-				rc = rkHjtGenMsg2072(NULL, &msg, &arg);
-				if (rc >= 0 && msg != NULL) {
-					rkDsmSaveMsg(MSGTYPEAOM, msg);
-					rkDtmSend(msg, strlen(msg));
-					rkHjtFree(msg);
-				} else {
-					fprintf(stderr, "%s : failed to generate message HJT2072.\n", __func__);
-				}
-				ctx->m_tAnalogParam.m_uAlarmFlag = 0;
+				bzero(msg, HJT_MSG_MAX_LEN);
+				rc = rkHjtGenMsg2072(NULL, msg, &arg);
+				rkDsmSaveMsg(MSGTYPEAOM, msg);
+				rkDtmSend(msg, strlen(msg));
 			} while(rc > 0);
+			ctx->m_tAnalogParam.m_uAlarmFlag = 0;
 		}
 
 		/* Reboot System At 24:00:00 */
 		if ((tms->tm_hour == 0) && (tms->tm_min == 0) && (tms->tm_sec == 30)) {
-			system("reboot");
+			//system("reboot");
 		}
 
 		sleep(1);
@@ -618,76 +571,65 @@ void rkDtmUploadThread(void *handle)
 	return;
 }
 
-int rkDtmRecvHjtMsg(struct hjtMsg *msg, uint32_t timeout_ms)
+int rkDtmRecvHjtMsg(char *msg)
 {
-	char recvbuf[512];
-	int ret, len;
-	uint16_t crc1, crc2;
-	uint32_t hjtRecved = 0;
-	HJT_ERR_T err;
+	int ret;
+	uint16_t msgcrc, calcrc;
+	uint32_t recved= 0, lastlen = 0;
 
 	/* Look for packet header */
 	while(1) {
-		ret = rkDtmRecv(recvbuf, 1, timeout_ms);
+		ret = rkDtmRecv(&msg[recved++], 1, HJT_CMD_RECV_TIMEOUT_MS);
 		if (ret <= 0) {
 			return -1;
 		}
 
-		if (recvbuf[0] == '#') {
-			hjtRecved = hjtRecved != 1 ? 1 : 2;
-			if (hjtRecved == 2) {
-				break;
-			}
-		}  else {
-			hjtRecved = 0;
+		if (recved <= 2 && msg[recved -1] != '#') {
+			recved = 0;
+			continue;
+		}
+
+		/* Get packet length */
+		if (recved == HJT_MSG_HDR_LEN) {
+			lastlen = atoi(msg + 2) + 6;
+			continue;
+		} 
+
+		if (recved == HJT_MSG_HDR_LEN + lastlen) {
+			break;
 		}
 	}
 
-	/* Get packet length */
-	bzero(recvbuf, sizeof(recvbuf));
-	ret = rkDtmRecv(recvbuf, 4, timeout_ms);
-	if (ret != 4) {
-		return -1;
-	}
-	len = atoi(recvbuf) + 6;
-	if (len <= 6) {
-		return -1;
-	}
-	ret = rkDtmRecv(recvbuf, len, timeout_ms);
-	if (ret != len || recvbuf[len - 2] != '\r' || recvbuf[len - 1] != '\n') {
+	if (msg[recved - 2] != '\r' || msg[recved - 1] != '\n') {
 		return -1;
 	}
 
-	recvbuf[len - 2] = '\0';
-	sscanf(&recvbuf[len - 6], "%4hX", &crc1);
-	crc2 = rkCrc16(recvbuf, len - 6);
-	if (crc1 != crc2) {
+	msgcrc = strtol(msg + recved - 6, NULL, 16);
+	calcrc = rkCrc16(msg + HJT_MSG_HDR_LEN, recved - 12);
+	if (msgcrc != calcrc) {
 		return -1;
 	}
 
-	ret = rkHjtParseMsg(recvbuf, msg, &err);
-	if (ret) {
-		switch(err) {
-			case HJTERRMN:
-				/* 
-				 * Do Nothing
-				 */
-				break;
-			case HJTERRPW:
-				{
-					char *rsp;
-					int arg = HJTREQERRORPW;
-					rkHjtGenMsg9011(msg, &rsp, &arg);
-					rkDtmSend(rsp, strlen(rsp));
-					rkHjtFree(rsp);
-				} break;
-			case HJTERRMSG:
-				bzero(msg, sizeof(struct hjtMsg));
-				break;
-			default:
-				break;
-		}
-		return -1;
+	return recved;
+}
+
+int rkDtmParseHjtMsg(char *msg, struct hjtPkt *pkt)
+{
+	int arg;
+	char buf[HJT_MSG_MAX_LEN];
+
+	switch(rkHjtParseMsg(msg, pkt)) {
+		case HJTERRPW:
+			arg = HJTREQERRORPW;
+			bzero(buf, sizeof(buf));
+			rkHjtGenMsg9011(pkt, buf, &arg);
+			rkDtmSend(buf, strlen(buf));
+			return -1;
+		case HJTERRMSG:
+		case HJTERRMN:
+			return -1;
+		default:
+			break;
 	}
 
 	return 0;
@@ -695,33 +637,32 @@ int rkDtmRecvHjtMsg(struct hjtMsg *msg, uint32_t timeout_ms)
 
 extern struct hjtCnMap hjtCnTbl[];
 
-int rkDtmProcHjtMsg(struct hjtMsg *msg)
+int rkDtmProcHjtReq(struct hjtPkt *pkt)
 {
 	int ret, arg;
-	char *rsp = NULL;
+	char buf[HJT_MSG_MAX_LEN];
 	struct hjtCnMap *node;
 
-	if (msg->flag & HJT_DATA_ANSWER_BIT) {
+
+	if (pkt->flag & HJT_DATA_ANSWER_BIT) {
 		arg = HJTREQREADYEXEC;
-		ret = rkHjtGenMsg9011(msg, &rsp, &arg);
-		if (ret == 0) {
-			rkDtmSend(rsp, strlen(rsp));
-			rkHjtFree(rsp);
-		}
+		bzero(buf, sizeof(buf));
+		rkHjtGenMsg9011(pkt, buf, &arg);
+		rkDtmSend(buf, strlen(buf));
 	}
 
 	for (node = (struct hjtCnMap *)hjtCnTbl; node->func != NULL; node++) {
 		/* Unmatch */
-		if (node->cn != msg->cn) {
+		if (node->cn != pkt->cn) {
 			continue;
 		}
 
-		ret = node->func(msg, &rsp, NULL);
+		bzero(buf, sizeof(buf));
+		ret = node->func(pkt, buf, NULL);
 
 		/* Command Need Response */
 		if (node->flag == 1 && ret == 0) {
-			rkDtmSend(rsp, strlen(rsp));
-			rkHjtFree(rsp);
+			rkDtmSend(buf, strlen(buf));
 		}
 
 		/* Answer Request */
@@ -733,11 +674,9 @@ int rkDtmProcHjtMsg(struct hjtMsg *msg)
 			arg = HJTEXECNODATA;
 		}
 
-		ret = rkHjtGenMsg9012(msg, &rsp, &arg);
-		if (ret == 0) {
-			rkDtmSend(rsp, strlen(rsp));
-			rkHjtFree(rsp);
-		}
+		bzero(buf, sizeof(buf));
+		rkHjtGenMsg9012(pkt, buf, &arg);
+		rkDtmSend(buf, strlen(buf));
 	}
 
 	return 0;

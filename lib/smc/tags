@@ -1,0 +1,26 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARCH	Makefile	/^ARCH = arm$/;"	m
+CC	Makefile	/^CC = \/usr\/local\/arm\/3.4.3-rockontrol\/bin\/arm-linux-gcc$/;"	m
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Wall -DDEBUG -I..\/..\/src -I..\/..\/depend\/include -I..\/..\/common -c$/;"	m
+OBJS	Makefile	/^OBJS = rksmc.o rkser.o$/;"	m
+SMC_ERROR	src/rksmc.h	/^	SMC_ERROR,$/;"	e	enum:__anon1
+SMC_FINISH	src/rksmc.h	/^	SMC_FINISH,$/;"	e	enum:__anon1
+SMC_RECEIVE	src/rksmc.h	/^	SMC_RECEIVE,$/;"	e	enum:__anon1
+SMC_REQUEST	src/rksmc.h	/^	SMC_REQUEST = 0,$/;"	e	enum:__anon1
+SMC_STEP_T	src/rksmc.h	/^} SMC_STEP_T;$/;"	t	typeref:enum:__anon1
+SMC_TIME_OUT_MS	src/rksmc.h	6;"	d
+TARGET	Makefile	/^TARGET = libsmc.so$/;"	m
+_RK_SMC_H_	src/rksmc.h	2;"	d
+init	src/rksmc.c	/^int init(void *handle)$/;"	f
+name	src/rksmc.c	/^char *name(void)$/;"	f
+printHex	src/rksmc.c	/^int printHex(void *buf, int len)$/;"	f
+rkGenSmcMsg	src/rksmc.c	/^int rkGenSmcMsg(char *buf, uint8_t slvaddr, uint16_t regaddr, uint8_t datatype)$/;"	f
+rkRecvSmcResp	src/rksmc.c	/^int rkRecvSmcResp(char *buf, float *val, int fd)$/;"	f
+rkSendSmcReq	src/rksmc.c	/^int rkSendSmcReq(int fd, const char *sendbuf, int bufsize)$/;"	f
+run	src/rksmc.c	/^int run(void *handle)$/;"	f

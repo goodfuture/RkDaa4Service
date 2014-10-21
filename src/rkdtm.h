@@ -7,8 +7,8 @@
 #define DTM_SEND_TIMEOUT_MS 1000
 #define DTM_RECV_TIMEOUT_MS 1000
 
-#define HJT_CMD_RECV_INTERVAL_MS 100
-#define HJT_CMD_RECV_TIMEOUT_MS 500
+#define HJT_CMD_RECV_INTERVAL_MS 1000
+#define HJT_CMD_RECV_TIMEOUT_MS 0
 
 /* 
  *  Function : data transmit module initialize.
@@ -22,8 +22,9 @@ void rkDtmSigHandler(int sig);
 void rkDtmRun(void *handle);
 int rkDtmSend(const char *msg, uint32_t len);
 int rkDtmRecv(char *msg, uint32_t len, uint32_t timeout_ms);
-int rkDtmRecvHjtMsg(struct hjtMsg *msg, uint32_t timeout_ms);
-int rkDtmProcHjtMsg(struct hjtMsg *msg);
+int rkDtmRecvHjtMsg(char *msg);
+int rkDtmParseHjtMsg(char *msg, struct hjtPkt *pkt);
+int rkDtmProcHjtReq(struct hjtPkt *pkt);
 int rkDtmCloseDtu();
 int rkDtmReuseDtu();
 

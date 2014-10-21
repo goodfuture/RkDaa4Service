@@ -271,8 +271,6 @@ int rkDamGetAiVal(struct analog *analog)
 			pthread_mutex_lock(&ai->lock);
 			rc1 = rkDamAiDataSample(ai);
 			rc2 = rkDamAiDataProc(ai, &analog->m_tCalibrateParam[i]);
-			//printf("ananlog[%d] : alarm = %d\n", i, ai->alarm);
-			//printf("ananlog[%d] : value = %f\n", i, ai->vals[RTD_CONV_VAL_OFFSET]);
 			if (rc1 == -1 || rc2 == -1) {
 				ai->flag = 'D';
 			} else {
@@ -559,11 +557,6 @@ int rkDamEiDataProc(struct edev *ei)
 	rkFmlUpdateSymTbl(tmp, fineval);
 
 	/* Save Converted Value */
-#if 0
-	if (fineval != 0) {
-		printf("Ei[%d] = %f\n", ei->id, fineval);
-	}
-#endif
 	ei->vals[RTD_CONV_VAL_OFFSET] = fineval;
 
 	/* Calcuate Statistic */
@@ -597,14 +590,11 @@ void rkDamEiChildThread(void *handle)
 	struct uart *puart = &ctx.m_tUartParam;
 	struct edev *ei;
 
-	//printf("id = %d\n", id);
-	//printuart(*puart, 1);
 	while(1) {
 		for (index = 0; index < EI_NUM; index++) {
 			ei = &puart->m_tChannelParam[index];
 			if (ei->inuse && (ei->com == id)) {
 				pthread_mutex_lock(&ei->mutex);
-				//printf("thread = %d, index = %d, ei->com = %d\n", id, index, ei->com);
 				rc1 = puart->m_tComParam[id].cfi.run(ei);
 				rc2 = rkDamEiDataProc(ei);
 				if (rc1 == 0 && rc2 == 0) {
